@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="ZenikaMobile.css">
+    <title>Zenika Mobile</title>
+    
+    <!-- GWT Import -->
+    <script type="text/javascript" language="javascript" src="ZenikaMobile/ZenikaMobile.nocache.js"></script>
+    
+    <!-- JQTouch & IScroll Import -->
+    <script src="jqtouch/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jqtouch/jqtouch.js" type="text/javascript" charset="utf-8"></script>
+    <script src="iscroll/iscroll.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="jqtouch/jqtouch.css" type="text/css">
+    <link rel="stylesheet" href="themes/apple/theme.css" type="text/css">
+
+    <!-- iScroll/JQTouch Integration -->
+    <script type="text/javascript" charset="utf-8">
+         
+        /* This is the only initialisation necessary for basic JQTouch without IScroll integration */    
+        var jQT = $.jQTouch({
+        	icon : 'ge-logo.png',
+          startupScreen: 'ge-startup2.png',
+          slideSelector: '#jqt ul > li > a, #jqt ol > li > a',
+          useFastTouch: true
+        });
+
+        function setHeight($item) {
+          var $wrapper = $item.find('.s-scrollwrapper');
+          if ($wrapper.length > 0) {
+            var headerH = 0;
+            var footerH = 0;
+            var tabbarH = 0;
+            var wrapperH = 320;
+
+            var $header = $item.find('.toolbar');
+            headerH = $header.length > 0 ? ($header.outerHeight() > 0 ? $header.outerHeight() : 0) : 0;
+
+            var $footer = $item.find('.tabbar'); // page footer
+            var $tabbar = $('#tabbar'); // global tabbar
+            if ($footer.length > 0) {
+              footerH = $footer.outerHeight();
+            } else if ($tabbar.length > 0) {
+              tabbarH = $tabbar.outerHeight(); 
+            }
+
+            // workaround limitation on outerHeight (ie, returns zero until animation ended)
+            if (headerH > 0 || footerH > 0 || tabbarH > 0) {
+              wrapperH = window.innerHeight - headerH - footerH - tabbarH;
+              $wrapper.height(wrapperH);
+            }
+
+            // refresh scroll
+            var scroll = $item.data('iscroll_object');
+            if (scroll !== undefined && scroll !== null) {
+              scroll.refresh();
+            }
+          }
+        }
+
+        function setCurrentHeight() {
+          setHeight($('.current'));
+        }
+
+        function loaded() {
+          $('#jqt').children().each(function () {
+            var $this = $(this);
+            var $wrapper = $this.find('.s-scrollwrapper');
+            var $pane = $wrapper.find('.s-scrollpane'); 
+            if ($wrapper.length > 0) {
+              var scroll = new iScroll($pane[0].id, {desktopCompatibility: true});
+              $this.data('iscroll_object', scroll); 
+
+              // workaround limitation on outerHeight (ie, returns zero until animation ended)
+              // set a default for most common case to avoid resize being seen
+              wrapperH = window.innerHeight - 88;
+              $wrapper.height(wrapperH);
+
+              scroll.refresh();
+
+              $this.bind('pageAnimationEnd', function(event, info) {
+                if (info.direction == 'in') {
+                  setHeight($(this));
+                }
+              });
+            }
+          });
+        }
+
+        document.addEventListener('touchmove', function(e){ e.preventDefault(); }, true);
+        $(window).resize(function() {
+          $('#jqt').children().each(function () {
+            setHeight($(this));
+          });
+        });
+        $(document).ready(function(){
+          loaded();
+          $(window).resize();
+
+          setTimeout(function() {
+            $(window).resize();
+          }, 1500);
+        });
+    </script>
+  </head>
+                                        
+  <body>
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+    
+    
+    <div id="jqt">
+      <div id="home" class="s-pane">
+        <div class="toolbar">
+          <h1>Zenika Mobile</h1>
+        </div>
+        <div class="s-scrollwrapper">
+          <div class="s-scrollpane" id="homepane">
+            <h1 align="center">Bienvenue sur l'application Zenika</h1><br>
+            <ul class="rounded">
+              <li class="arrow">
+                <a href="#formations">Formations</a>
+              </li>
+              <li class="arrow">
+                <a href="#conferences">Conférences</a>
+              </li>
+              <li class="arrow">
+                <a href="#experts">Experts</a>
+              </li>
+            </ul>             
+          </div>
+        </div>
+      </div>
+<!--    -->
+      <div id="formations" class="s-pane">
+        <div class="toolbar">
+          <h1>Formations</h1>
+          <a class="back" href="#">Acceuil</a>
+        </div>
+        <div class="s-scrollwrapper">
+          <div class="s-scrollpane" id="formationspane">
+            <h1 align="center">Les Prochaines Formations</h1><br>
+            <div id="formationres">
+              
+            </div>             
+          </div>
+        </div>
+      </div>
+      
+      <div id="conferences" class="s-pane">
+        <div class="toolbar">
+          <h1>Conférences</h1>
+          <a class="back" href="#">Acceuil</a>
+        </div>
+        <div class="s-scrollwrapper">
+          <div class="s-scrollpane" id="conferencespane">
+            <h1 align="center">A venir</h1>
+            <div id="conferencesavenirres">
+            
+            </div>
+            <h1 align="center">Passées</h1>
+            <div id="conferencesprecres">
+            
+            </div>             
+          </div>
+        </div>
+      </div>
+      
+      <div id="experts" class="s-pane">
+        <div class="toolbar">
+          <h1>Experts</h1>
+          <a class="back" href="#">Acceuil</a>
+        </div>
+        <div class="s-scrollwrapper">
+          <div class="s-scrollpane" id="expertspane">
+            <h1 align="center">Experts Zenika</h1><br>
+            <div id="expertres">
+            
+            </div>             
+          </div>
+        </div>
+      </div>
+      
+      <div id="formationdetail" class="s-pane">
+        <div class="toolbar">
+          <h1 id="formationdetailtitle"></h1>
+          <a class="back" href="#">Formations</a>
+        </div>
+        <div class="s-scrollwrapper">
+          <div class="s-scrollpane" id="formationdetailpane">
+            <div id="formationdetailpanel">
+            
+            </div>             
+          </div>
+        </div>
+      </div>
+      
+      <div id="conferencedetail" class="s-pane">
+        <div class="toolbar">
+          <h1 id="conferencedetailtitle"></h1>
+          <a class="back" href="#">Conférences</a>
+        </div>
+        <div class="s-scrollwrapper">
+          <div class="s-scrollpane" id="conferencedetailpane">
+            <div id="conferencedetailpanel">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="expertdetail" class="s-pane">
+        <div class="toolbar">
+          <h1 id="expertdetailtitle"></h1>
+          <a class="back" href="#">Experts</a>
+        </div>
+        <div class="s-scrollwrapper">
+          <div class="s-scrollpane" id="expertdetailpane">
+            <div id="expertdetailpanel">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
