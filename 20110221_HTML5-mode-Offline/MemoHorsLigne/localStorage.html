@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+<meta charset="UTF-8">
+<title>LocalStorage Application</title>
+<script src="OfflineLocal.js"></script>
+</head>
+<body id="body" onload="onload()">
+<h4 id="status" ></h4>
+<form>
+	Enter your text : <input type="text" id="data" autofocus>
+	<input type="button" id="submit" value="submit" onclick="saveData()">
+</form>
+<ul id="liste"></ul>
+</body>
+</html>

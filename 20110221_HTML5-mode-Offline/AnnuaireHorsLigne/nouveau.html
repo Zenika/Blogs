@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html manifest="cacheSQL.manifest">
+<head>
+<title>Nouveau</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href = "html5.css">
+<script src="sql.js"></script>
+<script>
+	initDatabase();
+</script>
+<style>
+input:required:invalid{
+	background-image: url(required.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+input:invalid{
+	background-image: url(invalid.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+input:required:valid{
+	background-image: url(valid.png);
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+</style>
+</head>
+
+<body>
+    <div id="container">
+    <header>
+		<h1>Annuaire</h1>
+	</header>
+
+    <nav>
+		<a href="annuaire.html">Accueil</a>
+		<a href="liste.html">Liste</a>
+		<a href="nouveau.html">Nouveau </a>
+	</nav>
+
+    <section>
+    	<article>
+			<h2>Nouveau Contact</h2>
+			
+			<form name="myform">
+				<div class="field">
+					<label for="lastName">Nom</label>
+					<input type="text" id="lastName" name="lastName" placeholder="" required>
+					
+				</div>
+				<div class="field">
+					<label for="firstName">Prénom</label>
+					<input type="text" id="firstName" name="firstName" required>
+				</div>
+				<div class="field">
+					<label for="birth">Date de naissance</label>
+					<input type="date" id="birth" name="birth" placeholder="year-month-day">
+				</div>
+				<div class="field">
+					<label for="phone">Téléphone</label>
+					<input type="tel" id="phone" name="phone" placeholder="" >
+				</div>
+				<div class="field">
+					<label for="mail">Adresse e-mail</label>
+					<input type="email" id="mail" name="mail" placeholder="">
+				</div>
+				<div class="field">
+					<label for="webSite">Site web</label>
+					<input type="url" id="webSite" name="webSite" placeholder="http://mywebsite">
+				</div>
+				<div align="center">
+					<input type="button" id="submit" value="Submit" onclick="handleSubmit()"/>
+				</div>
+				
+			</form>
+		</article>
+    </section>
+
+  	<footer>
+        <p>Développé par <a href="http://www.zenika.com">Zenika</a> </p>
+    </footer>
+
+    </div>
+</body>
+</html>
