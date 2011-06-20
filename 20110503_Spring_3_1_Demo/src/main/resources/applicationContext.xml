@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+         http://www.springframework.org/schema/jee
+         http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+         http://www.springframework.org/schema/jdbc
+         http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd">
+
+    <bean id="contactService"
+          class="com.company.contactbook.service.ContactServiceImpl">
+        <constructor-arg ref="contactDao"/>
+    </bean>
+
+    <beans profile="jndi">
+        <jee:jndi-lookup id="dataSource" jndi-name="jdbc/datasource"/>
+    </beans>
+    <beans profile="jdbc">
+        <jdbc:embedded-database id="dataSource" type="H2">
+            <jdbc:script location="classpath:schema.sql"/>
+            <jdbc:script location="classpath:testdata.sql"/>
+        </jdbc:embedded-database>
+    </beans>
+    <beans profile="jndi, jdbc">
+        <bean id="contactDao"
+              class="com.company.contactbook.dao.impl.JdbcContactDao">
+            <constructor-arg ref="dataSource"/>
+        </bean>
+    </beans>
+
+    <beans profile="memory">
+        <bean id="contactDao"
+              class="com.company.contactbook.dao.impl.InMemoryContactDao"/>
+    </beans>
+</beans>

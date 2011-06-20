@@ -1,0 +1,16 @@
+Demo project for Spring 3.1 features.
+
+The first part of this demonstration is the ability to use profile for
+different environments.
+For this feature, the demonstration lay on different stages of the development:
+- The testing step
+ - For the service layer (assuming that other layers are working).
+ - For the persistence layer (using an embedded persistence system).
+- Integration and production stages (discovering the configuration through JNDI).
+
+An "In Memory" storage is used during the service test, an embedded H2 database
+is provided for tests on the persistence layer.
+
+Of course this demonstration isn't the best use case available but due to the need
+of a clean and light code it should be enough to understand the principles of
+profiles and environment.
