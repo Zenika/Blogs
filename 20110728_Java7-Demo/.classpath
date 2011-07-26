@@ -2,5 +2,15 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="lib/asm-4.0_RC1.jar"/>
+	<classpathentry kind="lib" path="lib/asm-analysis-4.0_RC1.jar"/>
+	<classpathentry kind="lib" path="lib/asm-commons-4.0_RC1.jar"/>
+	<classpathentry kind="lib" path="lib/asm-tree-4.0_RC1.jar"/>
+	<classpathentry kind="lib" path="lib/asm-util-4.0_RC1.jar"/>
+	<classpathentry kind="lib" path="lib/asm-xml-4.0_RC1.jar"/>
+	<classpathentry kind="lib" path="lib/caliper-1.0-jdk7.jar"/>
+	<classpathentry kind="lib" path="lib/gson-1.7.1.jar"/>
+	<classpathentry kind="lib" path="lib/guava-r08.jar"/>
+	<classpathentry kind="lib" path="lib/java-allocation-instrumenter-2.1-jdk7.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

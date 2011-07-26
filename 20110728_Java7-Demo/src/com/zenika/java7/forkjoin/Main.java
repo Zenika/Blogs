@@ -31,7 +31,7 @@ public class Main {
 		System.err.println("> " + (System.currentTimeMillis() - start));
 	}
 
-	private static int[] generateRandomSequence(int length) {
+	public static int[] generateRandomSequence(int length) {
 		int[] result = new int[length];
 		for (int i = 0; i < length; ++i) {
 			result[i] = (int) (Math.random() * 2 * length);
