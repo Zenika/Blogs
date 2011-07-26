@@ -2,7 +2,7 @@ package com.zenika.java7.forkjoin.mergesort;
 
 import java.util.concurrent.RecursiveAction;
 
-public class ParrallelMergeSortAction extends RecursiveAction {
+public class ParallelMergeSortAction extends RecursiveAction {
 
 	private static final long serialVersionUID = 1L;
 
@@ -10,7 +10,7 @@ public class ParrallelMergeSortAction extends RecursiveAction {
 	private final int first;
 	private final int length;
 
-	public ParrallelMergeSortAction(int[] values, int first, int length) {
+	public ParallelMergeSortAction(int[] values, int first, int length) {
 		this.values = values;
 		this.first = first;
 		this.length = length;
@@ -23,14 +23,14 @@ public class ParrallelMergeSortAction extends RecursiveAction {
 		} else {
 			int midLength = length / 2;
 
-			ParrallelMergeSortAction m1 = null;
+			ParallelMergeSortAction m1 = null;
 			if (Utils.isLargeEnough(midLength)) {
-				m1 = new ParrallelMergeSortAction(values, first, midLength);
+				m1 = new ParallelMergeSortAction(values, first, midLength);
 				m1.fork();
 			}
 
 			if (Utils.isNotLargeEnough(length - midLength)) {
-				ParrallelMergeSortAction m2 = new ParrallelMergeSortAction(
+				ParallelMergeSortAction m2 = new ParallelMergeSortAction(
 						values, first + midLength, length - midLength);
 				m2.compute();
 			}
