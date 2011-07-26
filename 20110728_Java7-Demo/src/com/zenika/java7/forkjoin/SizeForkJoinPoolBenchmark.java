@@ -1,8 +1,7 @@
 package com.zenika.java7.forkjoin;
 
 import java.util.concurrent.ForkJoinPool;
-import com.zenika.java7.forkjoin.mergesort.ParrallelMergeSortAction;
-import com.zenika.java7.forkjoin.mergesort.SequentialMergeSort;
+import com.zenika.java7.forkjoin.mergesort.ParallelMergeSortAction;
 import com.google.caliper.Param;
 import com.google.caliper.Runner;
 import com.google.caliper.SimpleBenchmark;
@@ -38,7 +37,7 @@ public class SizeForkJoinPoolBenchmark {
 		int pool;
 
 		private int[] reference; // set by us, in setUp()
-		ParrallelMergeSortAction mergeAction;
+		ParallelMergeSortAction mergeAction;
 		private ForkJoinPool forkJoinPool;
 
 		@Override
@@ -48,7 +47,7 @@ public class SizeForkJoinPoolBenchmark {
 			
 			forkJoinPool = new ForkJoinPool(pool);
 //			int[] workingCopy = Arrays.copyOf(reference, reference.length);
-			mergeAction = new ParrallelMergeSortAction(reference, 0, reference.length);
+			mergeAction = new ParallelMergeSortAction(reference, 0, reference.length);
 		}
 
 		public void timeParrallelMergeSortAction(int reps) {
