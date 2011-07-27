@@ -1,6 +1,17 @@
 package com.zenika.java7.forkjoin.mergesort;
 
+/**
+ * @author Lucien Pereira
+ */
 public class Utils {
+	
+	public static int[] generateRandomSequence(int length) {
+		int[] result = new int[length];
+		for (int i = 0; i < length; ++i) {
+			result[i] = (int) (Math.random() * 2 * length);
+		}
+		return result;
+	}
 	
 	public static boolean isNotLargeEnough(int value) {
 		return !isLargeEnough(value);

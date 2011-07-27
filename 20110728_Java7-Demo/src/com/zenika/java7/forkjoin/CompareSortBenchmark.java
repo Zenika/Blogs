@@ -1,19 +1,17 @@
 package com.zenika.java7.forkjoin;
 
-import static com.zenika.java7.forkjoin.Main.generateRandomSequence;
-
 import java.util.Arrays;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.Future;
 
-import com.zenika.java7.forkjoin.mergesort.ParallelMergeSortAction;
-import com.zenika.java7.forkjoin.mergesort.SequentialMergeSort;
-
 import com.google.caliper.Param;
 import com.google.caliper.Runner;
 import com.google.caliper.SimpleBenchmark;
+import com.zenika.java7.forkjoin.mergesort.ParallelMergeSortAction;
+import com.zenika.java7.forkjoin.mergesort.SequentialMergeSort;
+import com.zenika.java7.forkjoin.mergesort.Utils;
 
 /**
  * Benchmark to compare {@link SequentialMergeSort} vs {@link ParrallelMergeSortAction}.<br/>
@@ -36,7 +34,7 @@ public class CompareSortBenchmark extends SimpleBenchmark {
 	@Override
 	protected void setUp() {
 		// @Param values are guaranteed to have been injected by now
-		reference = generateRandomSequence(size);
+		reference = Utils.generateRandomSequence(size);
 		
 		int[] workingCopy = Arrays.copyOf(reference, reference.length);
 		sequentialMergeSort = new SequentialMergeSort(workingCopy, 0, workingCopy.length);
@@ -52,7 +50,7 @@ public class CompareSortBenchmark extends SimpleBenchmark {
 		}
 	}
 
-	public void timeParrallelMergeSortAction(int reps) {
+	public void timeParallelMergeSortAction(int reps) {
 		for (int i = 0; i < reps; i++) {
 			forkJoinPool.invoke(mergeAction);
 		}

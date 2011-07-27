@@ -1,5 +1,8 @@
 package com.zenika.java7.forkjoin.mergesort;
 
+/**
+ * @author Lucien Pereira
+ */
 public class SequentialMergeSort implements Runnable {
 
 	private final int[] values;

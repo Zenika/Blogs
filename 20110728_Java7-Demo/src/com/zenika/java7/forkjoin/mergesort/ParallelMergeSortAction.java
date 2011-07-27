@@ -2,6 +2,9 @@ package com.zenika.java7.forkjoin.mergesort;
 
 import java.util.concurrent.RecursiveAction;
 
+/**
+ * @author Lucien Pereira
+ */
 public class ParallelMergeSortAction extends RecursiveAction {
 
 	private static final long serialVersionUID = 1L;
@@ -18,7 +21,7 @@ public class ParallelMergeSortAction extends RecursiveAction {
 
 	@Override
 	protected void compute() {
-		if (length < 2) {
+		if (Utils.isNotLargeEnough(length)) {
 			// NOp : An array with less than 2 elements is sorted (Right ?)
 		} else {
 			int midLength = length / 2;
@@ -29,7 +32,7 @@ public class ParallelMergeSortAction extends RecursiveAction {
 				m1.fork();
 			}
 
-			if (Utils.isNotLargeEnough(length - midLength)) {
+			if (Utils.isLargeEnough(length - midLength)) {
 				ParallelMergeSortAction m2 = new ParallelMergeSortAction(
 						values, first + midLength, length - midLength);
 				m2.compute();
