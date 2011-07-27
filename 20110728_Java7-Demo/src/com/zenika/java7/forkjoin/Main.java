@@ -27,7 +27,7 @@ public class Main {
 
 	private static void fsMain(String path) {
 		CountDirectoriesTask fst = new CountDirectoriesTask(new File(
-				"/home/lucien/doc"));
+				path));
 		Long nb = mainPool.invoke(fst);
 		System.out.println("Il y a eu "
 				+ mainPool.getStealCount()
@@ -40,7 +40,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		mergeSortMain(1000);
-		// fsMain("C:\\");
+		// fsMain("/home/lucien/doc");
 	}
 
 }
