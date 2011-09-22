@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="signature_validate">Valider</string>
+    <string name="signature_clear">Effacer</string>
+    <string name="main_get_signature">Signature</string>
+    <string name="main_last_signature_description">Dernière signature</string>
+</resources>
