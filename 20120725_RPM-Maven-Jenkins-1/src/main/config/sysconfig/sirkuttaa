@@ -1,0 +1,6 @@
+#!/bin/sh
+
+JAVA_OPTS+=" -Duser.language=en"
+JAVA_OPTS+=" -Duser.country=US"
+JAVA_OPTS+=" -Dsirkuttaa.config.file=/etc/sirkuttaa/default.properties"
+
