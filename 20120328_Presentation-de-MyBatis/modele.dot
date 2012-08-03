@@ -1,0 +1,17 @@
+digraph "Présentation de MyBatis" {
+	label = "Base de données"
+	
+	node [shape = record]
+	edge [minlen = 4, labeldistance = 2, headlabel = "1", taillabel = "n"]
+	
+	Formateur [label = "{\N|id_formateur \lnom \l}"]
+	Cours     [label = "{\N|id_cours \lnom \lduree \l}"]
+	Formation [label = "{\N|id_formation \ldate_debut \lid_cours \lid_formateur \l}"]
+	Stagiaire [label = "{\N|id_stagiaire \lnom \lid_formation \l}"]
+	
+	subgraph {
+		rank = same
+		Stagiaire -> Formation -> Formateur
+		Formation -> Cours
+	}
+}
