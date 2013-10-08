@@ -5,15 +5,14 @@
         <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII"/>
     </head>
     <body>
-	<script data-model="rest">
-		var Server = function() { this.name = ''; };
-	</script>
-	<script data-model="push">
-		var Updates = function() { this.h = this.m = this.s = this.d = this.M = this.y = ''; };
-	</script>
+         <script data-model="rest">
+             var Server = function() { this.name = ''; };
+         </script>
+         <script data-model="push">
+             var Updates = function() { this.h = this.m = this.s = this.d = this.M = this.y = ''; };
+         </script>
   	<script data-type="Server" data-instance="server" data-url="data/name"></script>
-	<script data-type="Updates" data-instance="updates" data-url="push/time"></script>
-	
+		<script data-type="Updates" data-instance="updates" data-url="push/time"></script>
 	<h2>Service Rest</h2>
 	<span id="output">Hello #{server.name}</span>
         <input size="24" id="name" data-value="#{server.name}"/>
