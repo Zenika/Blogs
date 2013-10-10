@@ -4,12 +4,13 @@ var getTime = function() {
 	var result = new Date();
 	return {
 		time: result.toISOString(),
-		h: result.getHours(), 
-		m: result.getMinutes(), 
-		s: result.getSeconds(),
-		d: result.getDate(),
-		M: result.getMonth()+1,//getMonth() returns 0-11
-		y: result.getFullYear()};
+		hour: result.getHours(), 
+		minute: result.getMinutes(), 
+		second: result.getSeconds(),
+		day: result.getDate(),
+		Month: result.getMonth()+1,//getMonth() returns 0-11
+		year: result.getFullYear()
+	};
 };
  
  

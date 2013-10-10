@@ -2,14 +2,14 @@
 <html>
     <head>
         <title>Demo</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     </head>
     <body>
 	<script data-model="rest">
 		var Server = function() { this.name = ''; };
 	</script>
 	<script data-model="push">
-		var Updates = function() { this.h = this.m = this.s = this.d = this.M = this.y = ''; };
+		var Updates = function() { this.hour = this.minute = this.second = this.day = this.Month = this.year = ''; };
 	</script>
   	<script data-type="Server" data-instance="server" data-url="data/name"></script>
 	<script data-type="Updates" data-instance="updates" data-url="push/time"></script>
@@ -20,8 +20,8 @@
         <button onclick="#{server.$put()}" id="set">Send</button>
 	
 	<h2>Service SSE</h2>
-       	<output class="time">Time: </output><output class="time">#{updates.h}:#{updates.m}:#{updates.s}</output><br>
-       	<output class="time">Date: </output><output class="time">#{updates.d}/#{updates.M}/#{updates.y}</output><br>
+       	<output class="time">Time: </output><output class="time">#{updates.hour}:#{updates.minute}:#{updates.second}</output><br>
+       	<output class="time">Date: </output><output class="time">#{updates.day}/#{updates.Month}/#{updates.year}</output><br>
         
     </body>
 </html>
