@@ -1,4 +1,4 @@
-package com.zenika.tryy;
+package com.zenika.util;
 
 /**
  * An implementation of Try representing a success.
@@ -30,14 +30,6 @@ public final class Success<E> extends Try<E> {
     @Override
     public Type getType() {
         return Type.SUCCESS;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    @Override
-    public E get() throws Exception {
-        return getResult();
     }
 
     @Override

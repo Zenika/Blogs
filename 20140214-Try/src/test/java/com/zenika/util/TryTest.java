@@ -1,4 +1,4 @@
-package com.zenika.tryy;
+package com.zenika.util;
 
 import org.junit.Test;
 
@@ -6,27 +6,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertSame;
+import static org.junit.Assert.*;
 
 public class TryTest {
 
     private final Exception exception = new Exception("bug");
-
-    @Test
-    public void getSuccessTest() throws Exception {
-        Try<Integer> success = new Success<>(1);
-        assertEquals(Integer.valueOf(1), success.get());
-    }
-
-    @Test(expected = Exception.class)
-    public void getFailureTest() throws Exception {
-        Try<Integer> failure = new Failure<>(exception);
-        failure.get();
-    }
 
     @Test
     public void ofSuccessTest() {
@@ -34,10 +22,10 @@ public class TryTest {
         assertEquals(new Success(2), fn.apply(1));
     }
 
-    @Test(expected = Exception.class)
+    @Test
     public void ofFailureTest() throws Exception {
         Function<Integer, Try<Integer>> fn = Try.<Integer, Integer>of(i -> { throw exception; });
-        fn.apply(1).get();
+        assertTrue(fn.apply(1).isFailure());
     }
 
     @Test
@@ -56,7 +44,7 @@ public class TryTest {
     public void mapSuccessTest() throws Exception {
         Try<Integer> success1 = new Success<>(1);
         Try<Double> success2 = success1.map(i -> 1.0);
-        assertEquals(Double.valueOf(1.0), success2.get());
+        assertEquals(Double.valueOf(1.0), success2.asSuccess().getResult());
     }
 
     @Test
@@ -70,16 +58,15 @@ public class TryTest {
     public void flatMapSuccessTest() throws Exception {
         Try<Integer> success1 = new Success<>(1);
         Try<Double> success2 = success1.flatMap(i -> 1.0);
-        assertEquals(Double.valueOf(1.0), success2.get());
+        assertEquals(Double.valueOf(1.0), success2.asSuccess().getResult());
     }
 
-    @Test(expected = Exception.class)
+    @Test
     public void flatMapFailureTest() throws Exception {
         Try<Integer> success = new Success<>(1);
-        Try<Integer> failure = success.flatMap(i -> {
-            throw exception;
-        });
-        failure.get();
+        Try<Integer> failure = success.flatMap(i -> { throw exception; });
+
+        assertSame(exception, failure.asFailure().getException());
     }
 
     @Test
@@ -97,26 +84,12 @@ public class TryTest {
         assertFalse(option.isPresent());
     }
 
-    @Test
-    public void orFailSuccess() throws Exception {
-        Try<List<Integer>> success = Try.consume(Arrays.asList(0, 1, 2).stream().
-                map(i -> new Success<>(i + 1)));
-
-        assertEquals(Arrays.asList(1, 2, 3), success.get());
-    }
-
-    @Test(expected = Exception.class)
-    public void orFailFailure() throws Exception {
-        Try<List<Integer>> failure = Try.consume(Arrays.asList(0, 1, 2).stream().
-                map(i -> {
-                    if (i % 2 == 0) {
-                        return new Success<>(i);
-                    } else {
-                        return new Failure<>(exception);
-                    }
-                }));
-
-        failure.get();
+    private Integer throwingModulo(Integer i) throws Exception {
+        if (i % 2 == 0) {
+            return i;
+        } else {
+            throw exception;
+        }
     }
 
     @Test(expected = ArithmeticException.class)
@@ -135,5 +108,52 @@ public class TryTest {
 
         assertEquals(Arrays.asList(success), tryMap.get(Try.Type.SUCCESS));
         assertEquals(Arrays.asList(failure), tryMap.get(Try.Type.FAILURE));
+    }
+
+    @Test
+    public void tryLazyOfFailureTest() {
+        Try<List<Integer>> result = Arrays.asList(0, 1, 2).stream().
+                map(Try.lazyOf(this::throwingModulo)).
+                collect(Try.collect());
+
+        assertTrue(result.isFailure());
+    }
+
+    @Test
+    public void tryLazyOfTest() {
+        AtomicInteger atomicInteger = new AtomicInteger();
+        Function<AtomicInteger,Supplier<Try<Integer>>> lazyFunction = Try.lazyOf(AtomicInteger::incrementAndGet);
+        Supplier<Try<Integer>> supplier = lazyFunction.apply(atomicInteger);
+        assertEquals(0, atomicInteger.get());
+        Try<Integer> integerTry = supplier.get();
+        assertTrue(integerTry.isSuccess());
+        assertEquals(Integer.valueOf(1), integerTry.asSuccess().getResult());
+    }
+
+    @Test
+    public void tryConsumeSuccessTest() {
+        Try<List<Integer>> result = Arrays.asList(0, 2, 4).stream().
+                map(Try.lazyOf(this::throwingModulo)).
+                collect(Try.collect());
+
+        assertTrue(result.isSuccess());
+        assertEquals(Arrays.asList(0, 2, 4), result.asSuccess().getResult());
+    }
+
+    @Test
+    public void tryConsumeFailureTest() {
+        Try<List<Integer>> result = Arrays.asList(0, 2, 5).stream().
+                map(Try.lazyOf(this::throwingModulo)).
+                collect(Try.collect());
+
+        assertTrue(result.isFailure());
+    }
+
+    @Test
+    public void isPresentSuccessTest() {
+        AtomicInteger atomicInteger = new AtomicInteger(0);
+        Success<AtomicInteger> success = new Success<>(atomicInteger);
+        success.ifPresent(input -> input.incrementAndGet());
+        assertEquals(1, success.getResult().get());
     }
 }

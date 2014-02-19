@@ -1,9 +1,9 @@
-package com.zenika.tryy;
+package com.zenika.util;
 
 /**
  * A function throwing an exception.
  */
-public interface TryFunction<I, O> {
+public interface ThrowingFunction<I, O> {
 
     /**
      * Applies this function to the given argument.

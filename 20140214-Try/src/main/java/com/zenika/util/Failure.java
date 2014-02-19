@@ -1,4 +1,4 @@
-package com.zenika.tryy;
+package com.zenika.util;
 
 /**
  * An implementation of Try representing a failure.
@@ -23,14 +23,6 @@ public final class Failure<E> extends Try<E> {
      */
     public Exception getException() {
         return exception;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    @Override
-    public E get() throws Exception {
-        throw exception;
     }
 
     /**
