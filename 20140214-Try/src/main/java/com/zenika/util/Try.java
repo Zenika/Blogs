@@ -106,18 +106,18 @@ public abstract class Try<E> {
      * @return
      */
     public <F> Try<F> map(Function<E, F> mapper) {
-        return flatMap(result -> mapper.apply(result));
+        return flatMap(of(result -> mapper.apply(result)));
     }
 
     /**
      * If the current instance represents a success, transform its result and return it as a Try.
      * Otherwise return the current instance.
      * @param mapper the function used to transform the result
-     * @param <F>
+     * @param <O>
      * @return
      */
-    public <F> Try<F> flatMap(ThrowingFunction<E, F> mapper) {
-        return isSuccess() ? Try.of(mapper).apply(asSuccess().getResult()) : (Try<F>) this;
+    public <O> Try<O> flatMap(Function<E, Try<O>> mapper) {
+        return isSuccess() ? mapper.apply(asSuccess().getResult()) : (Try<O>) this;
     }
 
     /**

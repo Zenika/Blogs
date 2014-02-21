@@ -57,14 +57,14 @@ public class TryTest {
     @Test
     public void flatMapSuccessTest() throws Exception {
         Try<Integer> success1 = new Success<>(1);
-        Try<Double> success2 = success1.flatMap(i -> 1.0);
+        Try<Double> success2 = success1.flatMap(Try.of(i -> 1.0));
         assertEquals(Double.valueOf(1.0), success2.asSuccess().getResult());
     }
 
     @Test
     public void flatMapFailureTest() throws Exception {
         Try<Integer> success = new Success<>(1);
-        Try<Integer> failure = success.flatMap(i -> { throw exception; });
+        Try<Integer> failure = success.flatMap(Try.of(i -> { throw exception; }));
 
         assertSame(exception, failure.asFailure().getException());
     }
