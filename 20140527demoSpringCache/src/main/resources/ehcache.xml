@@ -1,0 +1,18 @@
+<ehcache  
+    xsi:noNamespaceSchemaLocation="ehcache.xsd" 
+    updateCheck="true" 
+    monitoring="autodetect" 
+    dynamicConfig="true"
+    maxBytesLocalHeap="150M"    
+    >
+    <diskStore path="java.io.tmpdir"/>    
+
+    
+    <cache name="dataCache" 
+          eternal="false"
+          timeToIdleSeconds="300"
+          timeToLiveSeconds="300"
+          memoryStoreEvictionPolicy="LRU"/>      
+          
+      
+</ehcache>
