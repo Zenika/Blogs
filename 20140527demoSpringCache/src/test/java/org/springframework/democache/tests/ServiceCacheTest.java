@@ -19,6 +19,8 @@ public class ServiceCacheTest {
 
     public static final Logger logger = LoggerFactory.getLogger(ServiceCacheTest.class);
 
+    
+    
     @Autowired
     private ServiceCacher service;
 
