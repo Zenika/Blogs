@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+           xmlns:ext="http://aries.apache.org/blueprint/xmlns/blueprint-ext/v1.2.0">
+
+<!--	<ext:property-placeholder>
+		<ext:default-properties>
+			<ext:property name="hawtio.log.buffer.size" value="2000"/>
+		</ext:default-properties>
+	</ext:property-placeholder>-->
+
+  <bean id="initialJndiFacade" class="io.hawt.jndi.JndiFacade" init-method="init" destroy-method="destroy" scope="singleton">
+  </bean>
+  <bean id="javaJndiFacade" class="io.hawt.jndi.JndiFacade" init-method="init" destroy-method="destroy" scope="singleton">
+	  <property name="contextName" value="java:"/>
+  </bean>
+  <bean id="jndiPlugin" class="io.hawt.web.plugin.HawtioPlugin" init-method="init" destroy-method="destroy">
+    <property name="name" value="jndi"/>
+    <property name="context" value="/hawtio"/>
+    <property name="scripts" value="app/jndi/js/jndiHelper.js,app/jndi/js/jndiController.js,app/jndi/js/jndiPlugin.js"/>
+  </bean>
+</blueprint>
+

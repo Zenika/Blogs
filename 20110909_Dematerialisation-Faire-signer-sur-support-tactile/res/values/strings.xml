@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ZenSignature</string>
+    <string name="signature_validate">Validate</string>
+    <string name="signature_clear">Clear</string>
+    <string name="main_get_signature">Get Signature</string>
+    <string name="main_last_signature_description">Last signature</string>
+    <string name="main_title">Customer</string>
+    <string name="main_customer_name">Name</string>
+    <string name="main_customer_firstname">Firstname</string>
+    <string name="main_contract_date">Date</string>
+    <string name="main_na">NA</string>
+</resources>

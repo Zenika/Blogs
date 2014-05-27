@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+
+whatsnext.InfoStore = new Ext.data.Store({
+	fields : [ 'name' , 'content' ],
+	data : [ {
+		name : 'About',
+		content : '<p>In 2008, Zenika brought from San Francisco Ari Zilka, the CTO of Terracotta,  for an extraordinary conference which took place in Paris, with 150 attendees. Back at this time, the Parisian Java User Group had just been created and was the only one to organize public Java events in Paris, and Zenika is one of its sponsors.</p><p>Created by Java/JEE consultants, Zenika encourages information and knowledge sharing, by sponsoring and organizing conferences, and inviting the authors of open-source projects such as Spring, Apache Wicket, iText, Terracotta, BIRT, etc...</p><p>The idea of the what\'s next began after the eclipse day Paris. In 2010, Zenika organized the famous annual Eclipse conference in Paris. During this one day, the free and public event gathered more than 400 people.</p><p>With the interventions of well-known experts like Adrian Colyer,SpringSource / VMware CTO, and Neal Gafter from Microsoft, the What\'s Next conference will be the biggest Java event ever organized in France, gathering the vibrant French community.</p><p>The event will take place on May 26th and 27th in a famous venue, \'Le Grand Rex\', in the center of Paris.</p><br/> <p style="text-align: center"><img src="whatsnext_bonome.JPG" /></p>' 
+	}, {
+		name : 'Sponsors',
+		content : '<p style="font-weight: bold;">Platinum Sponsors</p><ul class="sponsorList"><li><a href="http://www.microsoft.fr/open/"><img src="http://www.whatsnextparis.com/images/Sponsors/microsoftlogo.jpg" /></a></li><li><a href="http://www.vmware.com/"><img src="http://www.whatsnextparis.com/images/Sponsors/vmware.jpg"/></a></li></ul> <p style="font-weight: bold;">Gold Sponsors</p><ul class="sponsorList"><li><a href="http://bit.ly/zt_whatsnext1"><img src="http://www.whatsnextparis.com/images/Sponsors/zt_logo.jpg" /></a></li><li><a href="http://www.kaazing.com"><img src="http://www.whatsnextparis.com/images/Sponsors/kaazing_logo.jpg"/></a></li><li><a href="http://www.adobe.com/flashplatform/"><img src="http://www.whatsnextparis.com/images/Sponsors/adobe_logo.jpg"/></a></li></ul> <p style="font-weight: bold;">Silver Sponsors</p><ul class="sponsorList"><li><a href="http://www.jaxio.com/"><img src="http://www.whatsnextparis.com/images/Sponsors/jaxio_logo_small.jpg" /></a></li><li><a href="http://serli.com/"><img src="http://www.whatsnextparis.com/images/Sponsors/serli.png"/></a></li></ul>' 
+	}, {
+		name : 'Contact',
+		content : '<p>Zenika<br/>51, rue Le Peletier<br/>75009 PARIS</p><p>Office : +33(0)1 45 26 19 15 <br/>Fax : +33(0)1 72 70 45 10</p><p>Email: <a href="mailto:training@zenika.com" style="color: #AC0E0D;">training@zenika.com</a></p><a href="http://www.zenika.com"><img src="http://www.zenika.com/templates/zenika/images/logo.gif" height="50"/></a>' 
+	}, {
+	name : 'Registration',
+	content : '<p style="font-weight: bold">Book now to benefit from the early bird price!</p><div class="redTitle">Prices</div><p>Early Bird (until May, the 6th) : 150&euro; for one day, 250&euro; for two days (excl. VAT)<br/>After that : 200&euro; for one day, 300&euro; for two days</p><div class="redTitle">Group Prices</div><p>Starting from 5 people, 20% off</p><div class="redTitle">FAFIEC / DIF</div><p>The two-day trainings are eligible for DIF. You can finance your participation with the FAFIEC.<br/>Please reach us either by mail (training@zenika.com) or by phone (+33(0)1 45 26 19 15).</p><br/><img src="http://www.whatsnextparis.com/images/logo_jrebel.png" style="max-height="50px"/><p>All attendees of What\'s Next will get a free JRebel LiquidMetal license, valid for 3 months, offered by ZeroTurnaround.</p><img src="http://www.whatsnextparis.com/images/roland-garros.jpg" /><p>At the occasion of the What\'s Next, a lotery will be organized the last day of the event (27th, friday) during which, all attendees will have the chance to win one of the 3 offered VIP tickets for Roland Garros.</p>' 
+	}]
+});

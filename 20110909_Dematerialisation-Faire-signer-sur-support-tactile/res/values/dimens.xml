@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_signature_img_width">160dip</dimen>
+    <dimen name="main_signature_img_height">80dip</dimen>
+    <dimen name="main_title_size">20dip</dimen>
+    <dimen name="main_padding_top">10dip</dimen>
+    <dimen name="main_padding_left">10dip</dimen>
+    <dimen name="main_padding_right">10dip</dimen>
+    <dimen name="main_under_title_margin_top">10dip</dimen>
+    <dimen name="main_edit_text_margin_right">5dip</dimen>
+    <dimen name="main_edit_text_margin_left">5dip</dimen>
+    <dimen name="main_edit_height">40dip</dimen>
+    <dimen name="main_date_text_size">16dip</dimen>
+    <dimen name="main_over_signature_margin_top">20dip</dimen>
+    
+</resources>

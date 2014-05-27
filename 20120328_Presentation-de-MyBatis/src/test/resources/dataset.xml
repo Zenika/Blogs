@@ -1,0 +1,19 @@
+<dataset>
+	<formateur id="1" nom="Dridi Boukelmoune" />
+	<formateur id="2" nom="Olivier Croisier" />
+	<formateur id="3" nom="Lucien Pereira" />
+	
+	<cours id="1" duree="4" nom="Java Spécialiste" />
+	<cours id="2" duree="2" nom="Scala" />
+	<cours id="3" duree="2" nom="MyBatis" />
+	
+	<formation id="1" id_formateur="1" id_cours="3" date_debut="2012-03-29" />
+	<formation id="2" id_formateur="3" id_cours="2" date_debut="2012-04-16" />
+	
+	<stagiaire id="1" id_formation="1" nom="Hugo" />
+	<stagiaire id="2" id_formation="1" nom="Benjamin" />
+	<stagiaire id="3" id_formation="1" nom="Louis" />
+	<stagiaire id="4" id_formation="2" nom="Leo" />
+	<stagiaire id="5" id_formation="2" nom="Axel" />
+	<stagiaire id="6" id_formation="2" nom="Lucas" />
+</dataset>

@@ -1,0 +1,58 @@
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.zenika.blog.rpm</groupId>
+	<artifactId>sirkuttaa</artifactId>
+	<version>${project.rpm.version}</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.rpm.version>dev</project.rpm.version>
+		<project.rpm.installDirectory>${project.build.directory}/${project.artifactId}</project.rpm.installDirectory>
+		<project.rpm.appendAssemblyId>true</project.rpm.appendAssemblyId>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.7</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.3</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.3</version>
+				<configuration>
+					<attach>false</attach>
+					<finalName>/</finalName>
+					<appendAssemblyId>${project.rpm.appendAssemblyId}</appendAssemblyId>
+					<outputDirectory>${project.rpm.installDirectory}</outputDirectory>
+					<descriptors>
+						<descriptor>src/main/assembly/rpm.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>verify</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
+

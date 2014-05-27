@@ -1,0 +1,22 @@
+<ul class="nav nav-tabs" ng-controller="Core.NavBarController">
+	<li ng-class='{active : isActive("#/jndi/initial")}'>
+		<a ng-href="{{link('#/jndi/initial')}}">Initial</a>
+	</li>
+	<li ng-class='{active : isActive("#/jndi/java")}'>
+		<a ng-href="{{link('#/jndi/java')}}">Java:</a>
+	</li>
+
+	<li class="pull-right">
+		<a ng-href="{{fullScreenLink()}}" title="Show this view in full screen" data-placement="bottom">
+			<i class="icon-fullscreen"></i>
+		</a>
+	</li>
+	<li class="pull-right">
+		<a ng-href="{{addToDashboardLink()}}" title="Add this view to a dashboard" data-placement="bottom">
+			<i class="icon-share"></i>
+		</a>
+	</li>
+</ul>
+<div class="row-fluid">
+	<div ng-view></div>
+</div>

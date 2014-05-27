@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Html5 Agenda</title>
+<link rel="stylesheet" href="CSS/jquery.mobile-1.0a4.min.css" />
+
+<script src="JS/jquery.1.5.1.min.js"></script>
+
+<script>
+$(document).bind("mobileinit", function(){
+
+});
+
+</script>
+<script src="JS/jquery.mobile-1.0a4.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="JS/agenda.js"></script>
+<script src="JS/agendaEvent.js"></script>
+<script src="JS/agendaGeoloc.js"></script>
+
+</head>
+<body>
+
+	<div id="home" data-role="page" data-theme="b">
+		<div data-role="header">
+			<h1>My Agenda</h1>
+			<a data-role="button" href="#new" class="ui-btn-right">New Event</a>
+		</div>
+		<div data-role="content" id="events"></div>		
+	</div>
+	
+	<div id="new" data-role="page" data-theme="d">
+		<div data-role="header" data-theme="b">
+			<h1>Create Event</h1>
+			<a data-role="button" data-icon="home" href="#home" class="ui-btn-right">Home</a>
+		</div>
+		<div data-role="content" data-theme="d">
+			<form>
+			  <ul data-role="listview" data-inset="true">
+				<li data-role="fieldcontain">
+		        	<label for="name">Event : </label>
+		        	<input type="text" id="name" name="name" placeholder="Enter the event's name" required/>
+			    </li>
+			    <li data-role="fieldcontain">
+		        	<label for="start">Start Date</label>
+		        	<input type="date" id="start" name="start" required/> 
+		        	<label for="startT">Start Time :</label> 
+		        	<input type="time" id="startT" name="startT" />
+			    </li>
+			    <li data-role="fieldcontain">
+			    	<label for="end">Finish Date : </label>
+			    	<input type="date" id="end" name="end" />
+			    	<label for="endT">End Time : </label>
+			    	<input type="time" id="endT" name="endT" />
+			    </li>
+			    <li data-role="fieldcontain">
+			    	<label for="location">Location : </label>
+			    	<input type="text" id="location" name="location" placeholder="Enter the adress of your event" />
+			    </li>
+			    <li data-role="fieldcontain">
+					<label for="repeat">Repetition :</label>
+					<select name="repeat" id="repeat">
+						<option value="none">None</option>
+						<option value="daily">Daily</option>
+						<option value="weekly">Weekly</option>
+						<option value="monthly">Monthly</option>							
+				 	</select>
+     			</li>
+     			<li data-role="fieldcontain">
+					<label for="alarm">Alarm :</label>
+					<select name="alarm" id="alarm" data-role="slider">
+						<option value="off">OFF</option>
+						<option value="on">ON</option>
+					</select> 
+     			</li>     		
+				<li class="ui-body">
+	                <fieldset class="ui-grid-a">
+	                        <div class="ui-block-a"><a href="#home" data-role="button" data-theme="a" data-icon="delete">Cancel</a></div>
+	                        <div class="ui-block-b"><a href="#home" data-role="button" data-theme="b" id="saveButton" data-icon="check">Save</a></div>
+	                </fieldset>
+            	</li>
+			  </ul>
+			</form>
+		</div>
+	</div>
+	
+	<div id="map" data-role="page" data-theme="d" style="width:100%; height:100%;">
+   		<div data-role="header" data-theme="b">
+   			<h1>Map Location</h1>
+   			<a data-role="button" data-icon="home" href="#home" class="ui-btn-right">Home</a>
+   		</div>
+   		
+   		<div id="map_canvas" style="width:100%; height:85%;"></div>
+   		
+   	 	<a data-role="button" href="#" id="traceButton" data-theme="b">Go to my Event</a>   		   	 	
+   	</div>
+
+</body>
+</html>

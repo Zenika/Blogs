@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zenika.blog.mybatis.SessionDao">
+	
+	<resultMap id="SessionResultMap" type="com.zenika.blog.mybatis.Session">
+		<id     property="idFormation" column="id_formation" />
+		<result property="nomCours" column="nom_cours" />
+		<result property="nomFormateur" column="nom_formateur" />
+		<collection property="participants" resultMap="ParticipantResultMap" />
+	</resultMap>
+	
+	<resultMap id="ParticipantResultMap" type="com.zenika.blog.mybatis.Participant">
+		<id     property="id" column="id_stagiaire" />
+		<result property="nom" column="nom_stagiaire" />
+	</resultMap>
+	
+	<select id="findAll" resultMap="SessionResultMap">
+		select
+			fo.id as id_formation,
+			co.nom as nom_cours,
+			fe.nom as nom_formateur,
+			st.id as id_stagiaire,
+			st.nom as nom_stagiaire
+		from formation fo, cours co, formateur fe, stagiaire st
+		where co.id = fo.id_cours
+		and fe.id = fo.id_formateur
+		and fo.id = st.id_formation
+	</select>
+</mapper>

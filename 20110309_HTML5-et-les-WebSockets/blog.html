@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="html5.css">
+<script>
+var ws;
+var username;
+var msg;
+
+function updateStatus(id, message) {
+	document.getElementById(id).innerHTML = message;
+}
+
+function loadWebSocket() {
+	//getData(); /*A decommenter pour sauvegarder les messages dans le LocalStorage*/
+	if (window.WebSocket) {
+		var url = "ws://localhost:8080/Html5WebSocket/ForumWebSocket/";
+		ws = new WebSocket(url);
+
+		updateStatus("wsStatus", "webSocket supported !");
+		ws.onopen = function() {
+			updateStatus("wsStatus", "Connected to WebSocket server!");
+		}
+		ws.onmessage = function(e) {
+			displayMessage(e.data);
+			//saveData()
+		}
+		ws.onclose = function() {
+			updateStatus("wsStatus", "WebSocket closed!");
+		}
+		ws.onerror = function(e) {
+			updateStatus("wsStatus", "WebSocket error : " + e.data);
+		}
+
+	} else {
+		updateStatus("wsStatus", "Your browser does NOT support webSocket.");
+	}
+}
+
+function sendMyPost(newPost) {
+	if (ws) {
+		ws.send(newPost);
+	}
+}
+
+function displayMessage(message) {
+	var m = message.split(':');
+	if ((m[0]) == 'CONNECTED') {
+		document.getElementById("users").innerHTML = m[1];//On récupère le nombre d'utilisateurs connectés.
+	} else {
+		updateStatus("msgStatus", "New message received!");
+		var article = document.createElement("article");
+		var par = document.createElement("p");
+		var texte = document.createTextNode(message);
+		var section = document.getElementById("section");
+		par.appendChild(texte);
+		article.appendChild(par);
+		section.appendChild(article);
+	}
+}
+
+function handleSubmit() {
+	var name = document.forms["myform"].name.value;
+	if (name) {
+		username = name;
+	} else {
+		username = "anonymous";
+	}
+	msg = document.forms["myform"].msg.value;
+	if (msg) {
+		var post = username + " : " + msg;
+		if (ws.readyState == 1) {
+			sendMyPost(post);
+		} else {
+			alert("The websocket is not open! try refreshing your browser");
+		}
+	} else {
+		alert("write your message in the texte area");
+	}
+}
+/*
+ * fonctions relatives au LocalStorage
+ */
+function saveData() {
+	if (window.localStorage) {
+		window.localStorage.setItem(username, msg);
+	}
+}
+
+function getData() {
+	if (window.localStorage) {
+		for ( var i = 0; i < window.localStorage.length; i++) {
+			var key = window.localStorage.key(i);
+			var value = window.localStorage.getItem(key);
+			var data = key + " : " + value;
+			displayMessage(data);
+			updateStatus("storageStatus", "Local storage loaded")
+		}
+	} else {
+		updateStatus("storageStatus",
+				"your browser does NOT support LocalStorage")
+	}
+}
+</script>
+<title>Forum WebSocket!</title>
+</head>
+<body onload="loadWebSocket()">
+<header>
+<h1>Welcome to the live Forum!</h1>
+</header>
+
+<h3 id="storageStatus"></h3>
+<h3 id="wsStatus"></h3>
+<br>
+<h3>Users connected: <span id="users"></span></h3>
+<br />
+<form name="myform">
+<h4>Post your message</h4>
+<div class="field"><label for="name">Username</label> <input
+	type="text" id="name" name="name"></div>
+<div class="field"><label for="msg">Message </label> <textarea
+	name="msg" cols="30" rows="5"></textarea></div>
+<div align="center"><input type="button" id="submit"
+	value="Submit" onclick="handleSubmit()" /></div>
+</form>
+<br>
+<h3 id="msgStatus"></h3>
+
+<section id="section"></section>
+<br />
+<br />
+<hr>
+<footer>Developped with WebSocket and Jetty. By <a
+	href="http://www.zenika.com">Zenika.</a></footer>
+</body>
+</html>

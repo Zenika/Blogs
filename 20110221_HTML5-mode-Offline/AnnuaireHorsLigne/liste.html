@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html manifest="cacheSQL.manifest">
+<head>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<link rel="stylesheet" href = "html5.css">
+<title>Liste</title>
+<script src="sql.js"></script>
+<script>
+	selectQuery();
+</script>
+<style>
+	table {
+	border-collapse:collapse;
+	margin-bottom:.5em;
+	background-color: white;
+	
+	}
+	table td, th {
+		border: 1px solid rgb(150,150,150);
+		width: 30%;
+		text-align: justify;
+	}
+</style>
+</head>
+<body>
+<div id="container">
+    <header>
+		<h1>Annuaire</h1>
+	</header>
+
+    <nav>
+		<a href="annuaire.html">Accueil</a>
+		<a href="liste.html">Liste</a>
+		<a href="nouveau.html">Nouveau </a>
+	</nav>
+
+    <section>
+    	<article>
+    		<h2>Voici la liste de vos contacts : </h2>
+    		<br />
+			<table id="liste" cellspacing="0">
+				<tr>
+				    <th>Nom</th>
+				    <th>Prénom</th>
+				    <th>Date de naissance</th>
+				    <th>Téléphone</th>
+				    <th>Email</th>
+				    <th>Site Web</th>
+			    </tr>
+			</table>
+		</article>
+    </section>
+
+    
+
+    <footer>
+        <p>Développé par <a href="http://www.zenika.com">Zenika</a> </p>
+    </footer>
+
+    </div>
+</body>
+</html>

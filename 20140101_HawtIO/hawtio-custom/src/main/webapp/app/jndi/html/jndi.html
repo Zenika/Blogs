@@ -1,0 +1,15 @@
+<script type="text/ng-template"  id="context_tree.html">
+	<span ng-switch on="node.leaf">
+		<span ng-switch-when="false">
+			<a href="" ng-click="toggleExpanded(node)">{{node.simpleName}}</a>: {{node.typeDescription}}
+			<ul>
+				<li ng-repeat="node in node.nodes" ng-include="'context_tree.html'"></li>
+			</ul>
+		</span>
+		<span ng-switch-default>{{node.simpleName}}: {{node.typeDescription}}</span>
+	</span>
+</script>
+<div ng-controller="Jndi.JndiController">
+	{{context.name}}
+    <li ng-repeat="node in context.nodes" ng-include="'context_tree.html'"></li>
+</div>
