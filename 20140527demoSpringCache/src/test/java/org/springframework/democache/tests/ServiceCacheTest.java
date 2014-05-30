@@ -48,6 +48,8 @@ public class ServiceCacheTest {
         Reponse rep2=service.getDatasWithCondition(new Parametres(90L,"param12","param22"));
         assertThat(rep2).isNotNull();
         assertThat(rep1).isNotSameAs(rep2);
+        assertThat(rep1).isEqualTo(rep2);
+
         
         //la condition de cache est bien vérifié
         logger.info("Appel 3");
@@ -71,7 +73,7 @@ public class ServiceCacheTest {
         assertThat(rep2).isNotNull();
         assertThat(rep1).isSameAs(rep2);
         
-        //Pas de cache,la valuer du clé est changé
+        //Pas de cache,la valeur de la clé est changé
         logger.info("Appel 3");
         Reponse rep3=service.getDatasWithKey(new Parametres(110L,"param13","param23"));
         assertThat(rep3).isNotNull();
@@ -79,6 +81,7 @@ public class ServiceCacheTest {
         Reponse rep4=service.getDatasWithKey(new Parametres(30L,"param13","param23"));
         assertThat(rep4).isNotNull();
         assertThat(rep3).isNotSameAs(rep4);
+        assertThat(rep3).isNotEqualTo(rep4);
     }
    
     @Test
@@ -100,6 +103,7 @@ public class ServiceCacheTest {
         Reponse rep3=service.getDatas(new Parametres(90L,"param1","param2"));
         assertThat(rep3).isNotNull();
         assertThat(rep3).isNotSameAs(rep2);
+        assertThat(rep3).isEqualTo(rep2);
     }
     
     @Test
@@ -118,5 +122,6 @@ public class ServiceCacheTest {
         Reponse rep3=service.getDatasWithPut(new Parametres(90L,"param1","param2"));
         assertThat(rep3).isNotNull();
         assertThat(rep3).isNotSameAs(rep2);
+        assertThat(rep3).isEqualTo(rep2);
     }
 }

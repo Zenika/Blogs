@@ -28,6 +28,16 @@ public class Reponse implements Serializable{
 		super();
 	}
 	
-	
+	public boolean equals(Object other) {
+		if(!(other instanceof Reponse)) {
+			return false;
+		}
+		Reponse otherReponse = (Reponse) other;
+		return id == otherReponse.id && valeur == otherReponse.valeur;
+	}
+
+	public int hashCode() {
+		return id.intValue();
+	}
 
 }
