@@ -34,8 +34,8 @@ public class ServiceCacheTest {
       //La valeur de cache est retourné sans exécuter la méthode
         logger.info("Appel 2");
         Reponse rep2=service.getDatas(new Parametres(10L,"param1","param2"));
-        assertThat(rep).isNotNull();
-        assertThat(rep).isEqualTo(rep2);
+        assertThat(rep2).isNotNull();
+        assertThat(rep).isSameAs(rep2);
     }
 
     @Test
@@ -47,7 +47,7 @@ public class ServiceCacheTest {
         logger.info("Appel 2");
         Reponse rep2=service.getDatasWithCondition(new Parametres(90L,"param12","param22"));
         assertThat(rep2).isNotNull();
-        assertThat(rep1).isNotEqualTo(rep2);
+        assertThat(rep1).isNotSameAs(rep2);
         
         //la condition de cache est bien vérifié
         logger.info("Appel 3");
@@ -56,7 +56,7 @@ public class ServiceCacheTest {
         logger.info("Appel 4");
         Reponse rep4=service.getDatasWithCondition(new Parametres(110L,"param13","param23"));
         assertThat(rep4).isNotNull();
-        assertThat(rep3).isEqualTo(rep4);
+        assertThat(rep3).isSameAs(rep4);
     }
     
     @Test
@@ -69,7 +69,7 @@ public class ServiceCacheTest {
         logger.info("Appel 2");
         Reponse rep2=service.getDatasWithKey(new Parametres(90L,"param123","param223"));
         assertThat(rep2).isNotNull();
-        assertThat(rep1).isEqualTo(rep2);
+        assertThat(rep1).isSameAs(rep2);
         
         //Pas de cache,la valuer du clé est changé
         logger.info("Appel 3");
@@ -78,7 +78,7 @@ public class ServiceCacheTest {
         logger.info("Appel 4");
         Reponse rep4=service.getDatasWithKey(new Parametres(30L,"param13","param23"));
         assertThat(rep4).isNotNull();
-        assertThat(rep3).isNotEqualTo(rep4);
+        assertThat(rep3).isNotSameAs(rep4);
     }
    
     @Test
@@ -90,7 +90,7 @@ public class ServiceCacheTest {
         logger.info("Appel 2");
         Reponse rep2=service.getDatas(new Parametres(90L,"param1","param2"));
         assertThat(rep2).isNotNull();
-        assertThat(rep1).isEqualTo(rep2);
+        assertThat(rep1).isSameAs(rep2);
         
         //Cache vidé 
         service.viderCacheData();
@@ -99,7 +99,7 @@ public class ServiceCacheTest {
         logger.info("Appel 3");
         Reponse rep3=service.getDatas(new Parametres(90L,"param1","param2"));
         assertThat(rep3).isNotNull();
-        assertThat(rep3).isNotEqualTo(rep2);
+        assertThat(rep3).isNotSameAs(rep2);
     }
     
     @Test
@@ -111,12 +111,12 @@ public class ServiceCacheTest {
         logger.info("Appel 2");
         Reponse rep2=service.getDatas(new Parametres(90L,"param1","param2"));
         assertThat(rep2).isNotNull();
-        assertThat(rep1).isEqualTo(rep2);
+        assertThat(rep1).isSameAs(rep2);
         
         //Forcer la mise à jour de cache, donc re-exécution de la méthode      
         logger.info("Appel 3");
         Reponse rep3=service.getDatasWithPut(new Parametres(90L,"param1","param2"));
         assertThat(rep3).isNotNull();
-        assertThat(rep3).isNotEqualTo(rep2);
+        assertThat(rep3).isNotSameAs(rep2);
     }
 }
