@@ -8,7 +8,7 @@ post_date: 2015-02-23 14:00:00
 post_excerpt: '<p>Zenika s’associe à la première édition française du NoSQL matters en tant que <strong>Conference Partner.</strong></p> <p><img src="/public/Al/nosql_matters.jpg" alt="nosql_matters.jpg" style="display:block; margin:0 auto;" /></p>'
 layout: post
 permalink: >
-  http://blog.zenika-offres.com/20150223zenika-conference-partner-du-nosql-matters-paris-2015/
+  http://blog.zenika-offres.com/zenika-conference-partner-du-nosql-matters-paris-2015/
 published: true
 slide_template:
   - default
