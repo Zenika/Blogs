@@ -1,13 +1,16 @@
 ---
 ID: 380
 post_title: 'Microsoft Tech Days 2015 &#8211; Jour 2'
-author: Laurent Claisse
-post_date: 2015-03-09 16:21:00
-post_excerpt: |
-  <p>Moins d'annonces d'évolutions .NET, une journée plus orientée architecture.</p> <p><img src="/public/_Claisse/tech-days-2015-2/tech-days-2015.png" alt="tech-days-2015.png" /><br /></p>
+author:
+  - lclaisse
+post_date:
+  - 2015-03-09 16:21:00
+post_excerpt:
+  - |
+    <p>Moins d'annonces d'évolutions .NET, une journée plus orientée architecture.</p> <p><img src="/public/_Claisse/tech-days-2015-2/tech-days-2015.png" alt="tech-days-2015.png" /><br /></p>
 layout: post
-permalink: >
-  http://blog.zenika-offres.com/microsoft-tech-days-2015-jour-2/
+permalink:
+  - ""
 published: true
 slide_template:
   - default
