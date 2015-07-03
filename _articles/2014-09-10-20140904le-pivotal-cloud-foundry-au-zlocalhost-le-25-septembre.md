@@ -1,0 +1,15 @@
+---
+ID: 362
+post_title: >
+  Cloud Platform Roadshow de Pivotal au
+  zlocalhost, le 25 septembre
+author: Al Amine Ousman
+post_date: 2014-09-10 14:30:00
+post_excerpt: '<p>Zenika a le plaisir d’héberger le Cloud Platform Roadshow de Pivotal qui aura lieu le jeudi 25 septembre à partir de 8h.</p> <p><img src="/public/Al/Event/.Hdr_Roadshow_Paris_fr_m.jpg" alt="Pivotal Cloud Foundry" style="display:block; margin:0 auto;" title="Pivotal Cloud Foundry" /></p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=362
+published: true
+---
+<p>Zenika a le plaisir d’héberger le Cloud Platform Roadshow de Pivotal qui aura lieu le jeudi 25 septembre à partir de 8h.</p> <p><img src="/wp-content/uploads/2015/07/.Hdr_Roadshow_Paris_fr_m.jpg" alt="Pivotal Cloud Foundry" style="display:block; margin:0 auto;" title="Pivotal Cloud Foundry" /></p>
+<!--more-->
+<h4>Construire et déployer une application sur une plateforme Cloud moderne</h4> <p>Au cours de cette journée, par le biais de différents ateliers, vous aurez la possibilité de tester la plateforme Pivotal Cloud Foundry. En quelques heures, vous pourrez vous rendre-compte de la rapidité et de la facilité de déploiement d’une application Cloud Foundry.</p> <p>Les ateliers s'adressent aux <em>Développeurs</em>, aux <em>Architectes</em>, et aux <em>Responsables Opérationnels et Techniques</em>.</p> <p>Les Keynotes vous donneront des indications précises et vous guideront vers les ateliers qui vous correspondent.</p> <h5>Programme&nbsp;:</h5> <ul> <li><strong>8h - 9h</strong>&nbsp;: Accueil &amp; Petit-Déjeuner</li> <li><strong>9h - 10h</strong>&nbsp;: Keynote d’ouverture&nbsp;: “Le Monde envahi par le Software” par Andrew Clay Shafer</li> <li><strong>10h - 10h15</strong>&nbsp;: Pause</li> <li><strong>10h15 - 11h30</strong>&nbsp;: "Session 1&nbsp;: L'Expérience Développeur” par Tobias Karlsson</li> <li><strong>11h30 - 11h45</strong>&nbsp;: Pause</li> <li><strong>11h45 - 13h00</strong>&nbsp;: "Session 2&nbsp;: Architecture &amp; Opérations" par Tobias Karlsson</li> <li><strong>13h00 - 14h30</strong>&nbsp;: Déjeuner &amp; Keynote&nbsp;: Délivrer en continu &amp; Microservices par Matt Stine,</li> <li><strong>14h30 - 14h45</strong>&nbsp;: Pause</li> <li><strong>14h45 - 16h00</strong>&nbsp;: "Session 3&nbsp;: Comment délivrer en continu" par Matt Stine</li> <li><strong>16h00 - 16h15</strong>&nbsp;: Pause</li> <li><strong>16hh15 - 17h30</strong>&nbsp;: "Session 4&nbsp;: Buildpacks &amp; Services Data Personnalisés" par Matt Stine</li> </ul> <p><strong>Cette conférence est gratuite, l’inscription est obligatoire.</strong></p> <p>Si vous souhaitez en apprendre plus sur la plateforme Cloud Foundry, rejoignez-nous pour cette journée exceptionnelle&nbsp;:</p> <p><a href="http://www.pivotal.io/cloud-platform-roadshow/paris"><img src="/wp-content/uploads/2015/07/informations.png" alt="Informations" style="display:block; margin:0 auto;" title="Informations" /></a></p>

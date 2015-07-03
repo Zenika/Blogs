@@ -1,0 +1,16 @@
+---
+ID: 279
+post_title: 'Tout ce que vous avez toujours voulu savoir du métier de consultant&#8230;'
+author: orudent
+post_date: 2010-06-09 14:19:00
+post_excerpt: |
+  <h5>Jeudi 01 juillet Zenika organise dans ses locaux une soirée portes-ouvertes inédite de découverte du métier de consultant.</h5> <p>Une occasion unique de rencontrer des experts du conseil et de partager le quotidien de professionnels engagés et reconnus.<br />
+  Experts ou Juniors, chacun pourra échanger sur ses ambitions et ses projets.<br /></p> <p>Partagez les expériences de nos consultants dans leurs 3 métiers&nbsp;: Conseil, Formation et Réalisation&nbsp;; et découvrez de l'intérieur le quotidien et la diversité de nos missions. Échanges directs et transparence&nbsp;: un véritable état d'esprit.</p> <h3>Nos consultants experts et juniors seront présents pour échanger avec vous sur leur vision et leur approche de leur métier.</h3> <p>Questions précises ou informations générales, c'est une occasion unique de comprendre nos métiers et de partager notre culture d'entreprise. <br /></p>
+layout: post
+permalink: http://blog.zenika-offres.com/?p=279
+published: true
+---
+<h5>Jeudi 01 juillet Zenika organise dans ses locaux une soirée portes-ouvertes inédite de découverte du métier de consultant.</h5> <p>Une occasion unique de rencontrer des experts du conseil et de partager le quotidien de professionnels engagés et reconnus.<br />
+Experts ou Juniors, chacun pourra échanger sur ses ambitions et ses projets.<br /></p> <p>Partagez les expériences de nos consultants dans leurs 3 métiers&nbsp;: Conseil, Formation et Réalisation&nbsp;; et découvrez de l'intérieur le quotidien et la diversité de nos missions. Échanges directs et transparence&nbsp;: un véritable état d'esprit.</p> <h3>Nos consultants experts et juniors seront présents pour échanger avec vous sur leur vision et leur approche de leur métier.</h3> <p>Questions précises ou informations générales, c'est une occasion unique de comprendre nos métiers et de partager notre culture d'entreprise. <br /></p>
+<!--more-->
+<h5>Déroulement de la soirée&nbsp;:</h5> <p>Un programme très concret&nbsp;: échanges, partage et retours d'expérience.</p> <h5>1ère partie</h5> <p>Des Interventions variées autour des missions, évolutions de carrières, critères de recrutement, valeurs d'entreprise, etc...</p> <h5>Seconde partie</h5> <p>Retours d'expérience concrets à travers des rencontres en one-to-one avec le ou les consultant(s) de votre choix au cours d'entretiens personnels.</p> <h5>Objectif&nbsp;: créer du lien.</h5> <p>A tout moment, vous pourrez nous laisser un CV.</p> <h3>Rendez-vous le 01 juillet.</h3> <p>La soirée débutera à <strong>19h00</strong> dans les locaux de <strong>Zenika au 51, rue Le Peletier, Paris 9ième</strong>.<br /></p> <p><a href="mailto:%69%6e%66%6f%40%7a%65%6e%69%6b%61%2e%63%6f%6d">Recevoir les informations relatives à l'événement</a> (plan, consultants présents, autre... Merci de préciser votre demande).<br /></p> <h3>Nos experts vous attendent nombreux.</h3>

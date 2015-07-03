@@ -1,0 +1,17 @@
+---
+ID: 65
+post_title: >
+  SmartGWT, un wrapper de SmartClient pour
+  GWT
+author: vmontaner
+post_date: 2008-12-03 17:23:00
+post_excerpt: '<p>La bibliothèque de widgets <a href="http://code.google.com/p/gwt-ext/">GWT-Ext</a>, qui ajoute de nombreux widgets présents dans la <a href="http://extjs.com/">librairie Javascript Ext.js</a> à <a href="http://code.google.com/webtoolkit/">GWT</a>, a changé de cap il y a quelques mois après la modification de licence de ext.js. Pour rappel, cette dernière avait abandonné sa licence LGPL pour adopter une double licence GPL et commerciale.</p> <p>Malgré le travail impressionnant de <a href="http://www.jroller.com/sjivan/">Sanjiv Jivan</a>, le développeur à l’origine de GWT-Ext, le projet n’a plus l’air aussi viable qu’à ses débuts. Il était l’unique développeur du projet à ses débuts, et de plus, très présent sur les forums.</p> <p>Si je vous en parle, c’est que je viens de trouver une news concernant SmartGWT, un projet développé également par Sanjiv Jivan. Je vous résume l’article ici.</p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=65
+published: true
+---
+<p>La bibliothèque de widgets <a href="http://code.google.com/p/gwt-ext/">GWT-Ext</a>, qui ajoute de nombreux widgets présents dans la <a href="http://extjs.com/">librairie Javascript Ext.js</a> à <a href="http://code.google.com/webtoolkit/">GWT</a>, a changé de cap il y a quelques mois après la modification de licence de ext.js. Pour rappel, cette dernière avait abandonné sa licence LGPL pour adopter une double licence GPL et commerciale.</p> <p>Malgré le travail impressionnant de <a href="http://www.jroller.com/sjivan/">Sanjiv Jivan</a>, le développeur à l’origine de GWT-Ext, le projet n’a plus l’air aussi viable qu’à ses débuts. Il était l’unique développeur du projet à ses débuts, et de plus, très présent sur les forums.</p> <p>Si je vous en parle, c’est que je viens de trouver une news concernant SmartGWT, un projet développé également par Sanjiv Jivan. Je vous résume l’article ici.</p>
+<!--more-->
+<p>SmartGWT est un wrapper de <a href="http://www.smartclient.com/">SmartClient</a>, un framework Javascript proposant de nombreux widgets. Concernant ses fonctionnalités, la démonstration parle d’elle même&nbsp;: très proche de celle de GWT-Ext, dans sa façon de présenter chaque widget, elle est à fois la vitrine des différents widgets, mais également une documentation efficace. En effet, chaque partie est accompagnée de son code source, et quasiment toutes les fonctionnalités y sont présentées&nbsp;: <a href="http://www.smartclient.com/smartgwt/showcase">http://www.smartclient.com/smartgwt/showcase</a></p> <p>Ce nouveau projet semble très prometteur, et on peut apprécier les nouveautés apportées par rapport à GWT-Ext, telles qu’une grande amélioration des Grids ou du Drag &amp; Drop.<br />
+Le tout est bien sûr en LGPL, et devient une bonne alternative aux librairies basées sur ext.js (double licence GPL + commerciale).<br />
+Côté performances, il ne faut peut être pas se fier à la lenteur du <a href="http://www.smartclient.com/smartgwt/showcase">showcase</a> qui charge un très grand nombre de widgets .</p> <p>On en parle ici&nbsp;: <a href="http://www.infoq.com/news/2008/11/smartgwt">http://www.infoq.com/news/2008/11/smartgwt</a></p>

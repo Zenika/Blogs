@@ -1,0 +1,20 @@
+---
+ID: 280
+post_title: >
+  Découvrez les Annotations telles que
+  vous ne les avez jamais vues !
+author: orudent
+post_date: 2010-06-08 10:30:00
+post_excerpt: |
+  <p><br /></p> <h5>Mardi 29 juin, <a href="http://www.zenika.com/experts/olivier_croisier?fg=50007">Olivier Croisier</a> animera une <a href="http://www.zenika.com/conference/java/speciale-annotations-par-olivier-croisier?fg=50007">conférence</a> d'une heure sur les Annotations, à destination des développeurs et des architectes Java.</h5> <p><br />
+  Introduites avec Java 5, les annotations ont ouvert la voie à la méta-programmation et sont aujourd'hui présentes dans tous les frameworks et API Java.<br /></p> <p>Au cours de la conférence, <a href="http://www.zenika.com/experts/olivier_croisier?fg=50007">Olivier</a> reviendra tout d'abord sur le principe des annotations et leur mise en œuvre au quotidien, puis démontrera l'étendue des possibilités qu'elles offrent à la compilation et au runtime, via les Annotation Processors et la Réflexion. <br /></p> <p>Cette conférence pourra donc intéresser les développeurs comme les architectes, qui pourront y découvrir de nouveaux cas d'utilisation ainsi que des techniques avancées. <br /></p> <h5>Attention, le nombre de places est très limité. <a href="http://www.zenika.com/conference/java/speciale-annotations-par-olivier-croisier?fg=50007">Réservez la vôtre dès maintenant</a>&nbsp;!</h5>
+layout: post
+permalink: http://blog.zenika-offres.com/?p=280
+published: true
+---
+<p><br /></p> <h5>Mardi 29 juin, <a href="http://www.zenika.com/experts/olivier_croisier?fg=50007">Olivier Croisier</a> animera une <a href="http://www.zenika.com/conference/java/speciale-annotations-par-olivier-croisier?fg=50007">conférence</a> d'une heure sur les Annotations, à destination des développeurs et des architectes Java.</h5> <p><br />
+Introduites avec Java 5, les annotations ont ouvert la voie à la méta-programmation et sont aujourd'hui présentes dans tous les frameworks et API Java.<br /></p> <p>Au cours de la conférence, <a href="http://www.zenika.com/experts/olivier_croisier?fg=50007">Olivier</a> reviendra tout d'abord sur le principe des annotations et leur mise en œuvre au quotidien, puis démontrera l'étendue des possibilités qu'elles offrent à la compilation et au runtime, via les Annotation Processors et la Réflexion. <br /></p> <p>Cette conférence pourra donc intéresser les développeurs comme les architectes, qui pourront y découvrir de nouveaux cas d'utilisation ainsi que des techniques avancées. <br /></p> <h5>Attention, le nombre de places est très limité. <a href="http://www.zenika.com/conference/java/speciale-annotations-par-olivier-croisier?fg=50007">Réservez la vôtre dès maintenant</a>&nbsp;!</h5>
+<!--more-->
+<h3>Pour aller plus loin...<br /></h3> <p>Ceux qui souhaitent aller plus loin peuvent également suivre la <a href="http://www.zenika.com/formation_java_specialiste.php?fg=50007">formation Java Spécialiste</a> animée par <a href="http://www.zenika.com/experts/olivier_croisier?fg=50007">Olivier Croisier</a>. <br /></p> <p>Au cours des 4 jours de la formation, vous étudierez les sujets les plus avancés comme les principes de la programmation concurrente, la réflexion ou l'optimisation des I/O. <br />
+La formation est agrémentée de nombreux exercices qui permettent la mise en pratique des notions étudiées. <br />
+Même le programmeur Java le plus aguerri y trouvera un certain challenge&nbsp;!</p> <p><a href="http://www.zenika.com/experts/olivier_croisier?fg=50007">Olivier</a> est certifié SCJP 5.0 et vient d'être agréé <strong>Certified JavaSpecialist Master Course Instructor</strong>, devenant ainsi le formateur JavaSpecialist de référence en France. Il anime également le blog <a href="http://thecodersbreakfast.net/">The Coder's Breakfast</a>.</p>

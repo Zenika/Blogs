@@ -1,0 +1,13 @@
+---
+ID: 360
+post_title: Startup Decode chez Zenika
+author: Frédérique Mercié
+post_date: 2014-08-19 15:57:00
+post_excerpt: '<p>Pour sa première rencontre, Startup Décode a rassemblé sa communauté chez Zenika.</p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=360
+published: true
+---
+<p>Pour sa première rencontre, Startup Décode a rassemblé sa communauté chez Zenika.</p>
+<!--more-->
+<p>L'objectif de ce meetup est de réunir de façon simple et conviviale les porteurs de projets de startups, et les aider à se familiariser avec le langage des développeurs. Ce milieu est en effet bien connu pour son “jargonnage”. Et pourtant, il est indispensable aujourd'hui pour les entrepreneurs d'avoir des bases en code. <br /></p> <p>Le but n'est pas de les former à devenir des développeurs mais de s'approprier leur langage pour mieux exprimer leurs attentes. Chaque séance comporte des ateliers pratiques pour mettre un peu les mains dans le cambouis.</p> <p><img src="/wp-content/uploads/2015/07/.P1080496_s.jpg" alt="StartUp Decode" style="float:left; margin: 0 1em 1em 0;" title="StartUp Decode" /> Cette initiative d'Amine Sadry a tout de suite trouvé sa place dans les événements soutenus par Zenika. Zenika porte une attention toute particulière à entrepreneuriat Français. C'est d'ailleurs pour cela qu'elle a lancé le programme <a href="http://zenika.com/Zenika/zstartup-by-zenika.html" title="zStartup">zStartUp</a>, pépinière d'entreprise interne. <br /></p> <p>Dès lors, quoi de plus logique que d'aider les porteurs de projets à entrer dans le monde qui est le sien&nbsp;: celui de l'IT.</p> <p>“<em>Lorsque j’ai lancé le meetup, je ne savais pas trop à quoi m’attendre</em>" nous explique Amine Sadry. "<em>Je n’avais ni salle pour l’événement ni programme; En plus c’est la période estivale où paris se vide de ses habitants</em>.</p> <p>"<em>Au final le bilan est très positif. Les participants étaient au rendez-vous et enthousiasmés par ce projet. Le cadre du show-room de Zenika est super agréable.</em>"<br /></p> <p>"<em>J’ai eu des retours très positifs des personnes présentes qui aimeraient renouveler l’événement.</em>"<br /></p> <p>"<em>La prochaine étape pour moi est de faire de ce meetup un rendez-vous mensuel pour tous les entrepreneurs-apprentis codeurs qui veulent monter en compétences dans une ambiance conviviale; En espérant que cela les aidera à concrétiser leurs projets de startups.</em>"<br /></p> <p><br /><br /></p> <p>Nous souhaitons bonne chance à ces nouvelles rencontres et espérons qu'elles rassembleront toujours plus de participants&nbsp;!</p> <p><a href="http://www.meetup.com/StartupDecode/events/195699862/">Plus d'informations</a></p>

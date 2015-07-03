@@ -1,0 +1,18 @@
+---
+ID: 266
+post_title: >
+  Bilan de la soirée de lancement du
+  Spring User Group
+author: orudent
+post_date: 2010-03-01 10:00:00
+post_excerpt: |
+  <p>Le <a href="http://groups.google.fr/group/sugfr/">Spring User Group</a> a organisé hier soir sa soirée de lancement à l'hôtel Banke, pour répondre à la forte demande. La communauté Spring était au rendez-vous avec 110 inscrits.</p>
+layout: post
+permalink: http://blog.zenika-offres.com/?p=266
+published: true
+---
+<p>Le <a href="http://groups.google.fr/group/sugfr/">Spring User Group</a> a organisé hier soir sa soirée de lancement à l'hôtel Banke, pour répondre à la forte demande. La communauté Spring était au rendez-vous avec 110 inscrits.</p>
+<!--more-->
+<p>Arnaud Cogoluègnes, expert Spring et co-auteur de la seconde édition de <a href="http://www.amazon.fr/gp/product/221212421X?ie=UTF8&amp;tag=zenika-21&amp;linkCode=as2&amp;camp=1642&amp;creative=6746&amp;creativeASIN=221212421X">Spring par la Pratique</a>, a présenté les nouveautés apportées par Spring 3.0.</p> <p>Plusieurs aspects ont fait l'objet de focus avec de nombreux exemples de code et de bonnes pratiques. La migration vers Spring 3.0 et les enjeux de la nouvelle version ont également été abordés.<br /></p> <h5>Ceux qui n'ont pas pu assister à la conférence, peuvent consulter les <a href="http://sugfr.googlegroups.com/web/sugfr_20100225_spring3.pdf?gda=oaUkGUwAAAAGjtT_7mLpedQR6WOxprsbtntixSfmM-AMFy17tFC4f0OKfGnlDcHvn0XfxCfas8U4TM6fjVZx0ZRjK5iSD2lfF5SmQHFUDRgCaIB27d1n-g">slides de la présentation</a>.<br /></h5> <p><br /></p> <p><img src="/wp-content/uploads/2015/07/.S73F1319_s.jpg" alt="SAMSUNG DIGITAL CAMERA" style="display:block; margin:0 auto;" title="SAMSUNG DIGITAL CAMERA" /> <br /></p> <p><img src="/wp-content/uploads/2015/07/.S73F1318_s.jpg" alt="SAMSUNG DIGITAL CAMERA" style="display:block; margin:0 auto;" title="SAMSUNG DIGITAL CAMERA" /> <br /></p> <p><img src="/wp-content/uploads/2015/07/.S73F1321_s.jpg" alt="SAMSUNG DIGITAL CAMERA" style="display:block; margin:0 auto;" title="SAMSUNG DIGITAL CAMERA" /><br /></p> <h5>Voici quelques réactions prises sur le vif:</h5> <p>"Une très bonne présentation réalisée par l'intervenant" K. C.</p> <p>"Intéressant, bonne présentation, bien illustrée par des exemples de code" B. D.</p> <p>"Cela m'a donné un très bon aperçu des nouveautés de Spring 3" J.P. L</p> <p>"La présentation est bien synthétique et assez technique. Cela me convient parfaitement" H. F.</p> <p>"Novice est pourtant j'ai tout compris" J.F. L.</p> <p>"Présentation très claire et qui présente une bonne entrée en matière pour Spring 3" N. S.</p> <h2>Zenika contribue à l'essor du Spring User Group</h2> <p><br />
+Arnaud Cogoluègnes a profité de l'occasion pour annoncer la contribution active de Zenika au SUG.</p> <p>Tous les deux mois, Zenika mettra à disposition des membres une salle où ils pourront partager leurs expériences et bénéficier de conférences d'experts.</p> <p>Zenika est très impliquée dans l'émulation de la communauté Open Source, qu'elle souhaite soutenir. Pour cette raison, elle octroie du temps à ses consultants afin qu'ils puissent contribuer, via des développements et investissements personnels, à la qualité de la communauté.</p> <h2>Déjà plus de 100 membres</h2> <p><br />
+Le Spring User Group dispose désormais d'une centaine de membres et compte devenir rapidement un acteur incontournable de la communauté Spring.</p> <p>Des conversations ont déjà été initiées sur le user group et sont ouvertes à l'ensemble des membres.</p>

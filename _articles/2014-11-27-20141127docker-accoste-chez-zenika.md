@@ -1,0 +1,13 @@
+---
+ID: 374
+post_title: Docker accoste chez Zenika !
+author: Al Amine Ousman
+post_date: 2014-11-27 10:00:00
+post_excerpt: '<p>Le<strong> Docker Tour de France</strong> sera de passage chez Zenika toute la journée du 17 décembre 2014. <img src="/public/Al/UserGroup/docker_tour.jpg" alt="Docker Tour" style="display:block; margin:0 auto;" title="Docker Tour" /></p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=374
+published: true
+---
+<p>Le<strong> Docker Tour de France</strong> sera de passage chez Zenika toute la journée du 17 décembre 2014. <img src="/wp-content/uploads/2015/07/docker_tour.jpg" alt="Docker Tour" style="display:block; margin:0 auto;" title="Docker Tour" /></p>
+<!--more-->
+<p>Juste après le <a href="http://europe.dockercon.com/">DockerCon Europe 2014</a> (qui aura lieu les 4 et 5 décembre à Amsterdam et dont Zenika sera sponsors),<br /> <strong>Docker</strong> organise son «&nbsp;Tour de France ». Plusieurs présentations seront effectuées dans toute la France du 8 au 22 décembre afin de présenter Docker aux accélérateurs, incubateurs, entreprises, mais également aux écoles spécialisées.</p> <h5>Paris Docker Breakfast</h5> <p>Une matinale «&nbsp;théorique&nbsp;»  sera organisée sous forme de petit déjeuner durant laquelle <a href="https://twitter.com/jpetazzo">Jerôme Petazzoni</a>, <a href="https://twitter.com/vcoisne">Victor Coisne</a> et <a href="https://twitter.com/julienbarbier42">Julien Barbier</a> vous présenteront la <strong>plateforme Open Source Docker et son écosystème</strong>. Vous assisterez également à une étude de cas utilisateur.<br /></p> <p><em>Le nombre de places etant limité, contactez nous à l’adresse <a href="mailto:%65%76%65%6e%74%73%40%7a%65%6e%69%6b%61%2e%63%6f%6d">events@zenika.com</a> pour réserver votre place.</em></p> <h5>Paris Docker Training</h5> <p>L’après midi sera entièrement consacré à la technique&nbsp;: Vous y découvrirez comment fonctionne Docker&nbsp;? Pour quelles applications&nbsp;? La différence entre les conteneurs et les machines virtuelles. Le tout sera bien évidement accompagné de nombreuses démonstrations. <br /></p> <p><em>Cette formation est payante et uniquement sur invitation. Pour plus d'information contactez nous à l’adresse :<a href="mailto:%65%76%65%6e%74%73%40%7a%65%6e%69%6b%61%2e%63%6f%6d">events@zenika.com</a></em></p> <p>Pour en savoir plus sur le<strong> Docker Tour de France</strong> et connaître toutes les dates de la tournée <a href="http://blog.docker.com/2014/11/docker-tour-de-france/">cliquez ici</a></p>

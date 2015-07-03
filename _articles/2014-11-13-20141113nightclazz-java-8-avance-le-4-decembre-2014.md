@@ -1,0 +1,14 @@
+---
+ID: 372
+post_title: 'NightClazz Java 8 &#8211; Avancé, le 4 décembre 2014 au #zlocalhost'
+author: Al Amine Ousman
+post_date: 2014-11-13 14:40:00
+post_excerpt: |
+  <p><img src="/public/Al/Event/.NCJava8_avance_m.jpg" alt="NC JAVA 8 Avancé" style="display:block; margin:0 auto;" title="NC JAVA 8 Avancé" /></p> <p>Après la NightClazz Java 8 - Découverte (voici les différents supports <a href="https://github.com/Zenika/nc-java8-decouverte">Github</a> | <a href="http://fr.slideshare.net/Zenika/night-clazz-java8decouverte">Slideshare</a>) durant laquelle vous avez pu découvrir les lambda expressions, la programmation fonctionnelle en Java 8, l'API stream et les nouvelles possibilités d'annotations.</p> <p>Zenika vous propose d'assister à la <strong>NightClazz Java 8 - Avancé</strong>.</p>
+layout: post
+permalink: http://blog.zenika-offres.com/?p=372
+published: true
+---
+<p><img src="/wp-content/uploads/2015/07/.NCJava8_avance_m.jpg" alt="NC JAVA 8 Avancé" style="display:block; margin:0 auto;" title="NC JAVA 8 Avancé" /></p> <p>Après la NightClazz Java 8 - Découverte (voici les différents supports <a href="https://github.com/Zenika/nc-java8-decouverte">Github</a> | <a href="http://fr.slideshare.net/Zenika/night-clazz-java8decouverte">Slideshare</a>) durant laquelle vous avez pu découvrir les lambda expressions, la programmation fonctionnelle en Java 8, l'API stream et les nouvelles possibilités d'annotations.</p> <p>Zenika vous propose d'assister à la <strong>NightClazz Java 8 - Avancé</strong>.</p>
+<!--more-->
+<h4>Programme&nbsp;:</h4> <p><strong>19h</strong>&nbsp;: Accueil</p> <p><strong>19h30 - 21h30</strong>&nbsp;:</p> <ul> <li>Rappels de la NightClazz Découverte</li> </ul> <p>- Méthode par défaut - Lambda expressions et API Stream</p> <ul> <li>Expressions lambda et API Stream Avancées</li> </ul> <p>- Notion du 'Target Typing' pour les expressions lambda - Fonctions avancées de l'API Stream</p> <ul> <li>Inférence de Type</li> </ul> <p>- Inférences de type, les interfaces et les classes. - Inférences de type et le 'Target Typing'.</p> <p><strong>21h00</strong>&nbsp;: Buffets pizzas</p> <p><strong>21h30 - 22h30</strong>&nbsp;:</p> <ul> <li>Découverte de la nouvelle API de date</li> </ul> <p>- Manipulation de dates facilitée</p> <ul> <li>Annotations</li> </ul> <p>- Annotations répétables - Utilisation Étendue des Annotation.</p> <ul> <li>API réflexion revisitée</li> </ul> <p>- Revue de l'API reflexion - Nouveauté Java 8</p> <h4>Prérequis</h4> <ul> <li>Un ordinateur portable</li> <li>JDK 8</li> <li>Un IDE supportant Java 8</li> <li>Maven</li> </ul> <p><a href="http://www.zenika.com/nightclazz-avance-java8.html">Inscriptions &amp; Informations</a></p> <p><em>Afin de pouvoir vous proposer des prestations de qualité, l’inscription à nos événements est obligatoire. Vous recevrez par mail la confirmation de votre inscription.</em></p>

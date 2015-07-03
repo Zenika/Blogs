@@ -1,0 +1,16 @@
+---
+ID: 347
+post_title: 'NightClazz AngularJS &#8211; Découverte, le jeudi 6 février au zlocalhost'
+author: Al Amine Ousman
+post_date: 2014-01-28 10:30:00
+post_excerpt: '<p>Tous les premiers jeudi du mois, Zenika vous propose d’assister à des événements techniques en soirée :<strong> Les NightClazz</strong></p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=347
+published: true
+---
+<p>Tous les premiers jeudi du mois, Zenika vous propose d’assister à des événements techniques en soirée :<strong> Les NightClazz</strong></p>
+<!--more-->
+<p>Ces événements techniques vous permettent de bénéficier des compétences des consultants / formateurs Zenika. Composées de 2 niveaux (découverte et avancé), les NightClazz vous permettront de (re)découvrir des technologies et/ou monter en compétences.</p> <p>Ce mois-ci c’est AngularJS qui est à l’honneur, après un bref passage sur les fondamentaux de cette technologie, vous participerez à des workshops. Venez donc avec votre ordinateur.</p> <h4>Workshop</h4> <p>Partant d'une simple maquette statique vous allez construire petit à petit une application en mettant en oeuvre les concepts suivants&nbsp;:</p> <ul> <li>Simple binding</li> <li>Controller</li> <li>Formulaire</li> <li>ngRepeat</li> <li>Filtre</li> <li>Directive</li> <li>Modules</li> <li>et plus si affinité...</li> </ul> <h4>Programme</h4> <ul> <li><strong>19h</strong>&nbsp;: Accueil</li> <li><strong> 19h15 - 20h30</strong>&nbsp;: Workshop</li> <li><strong> 20h30 - 21h</strong>&nbsp;: Buffet pizzas</li> <li><strong>21h - 22h30</strong>&nbsp;: Workshop</li> </ul> <h4>Nos consultants</h4> <h5>Yoann Prot <br /></h5> <p><img src="/wp-content/uploads/2015/07/yoann_prot_pix.jpg" alt="yoann_prot_pix.jpg" style="float:left; margin: 0 1em 1em 0;" /> Yoann est consultant Zenika spécialisé dans les technologies Java et Angular. Depuis presque 1 an, il met en place une solution intégralement réalisée en Angular/REST pour chez un client avec de nombreuses problématiques (stockage local, mode déconnecté, responsive).<br />
+<br />
+<br />
+<br /></p> <h5>Olivier Huber<br /></h5> <p><img src="/wp-content/uploads/2015/07/ohuber_pix.jpg" alt="ohuber_pix.jpg" style="float:left; margin: 0 1em 1em 0;" />Olivier est un passionné de création logicielle. Pour lui, notre métier est l'un des rares à nous donner la capacité de matérialiser une idée rapidement et quasiment gratuitement. Initié il y a plus de dix ans à l'agilité par la pratique de l'eXtrême Programming, il devient Agiliste convaincu et Scrum Master par la suite. Il intervient principalement depuis 14 ans en développement / conseil / formation chez des grands comptes qui ont des besoins Java, JEE et Web de façon générale, à la fois côté serveur (Spring, Hibernate, JPA et leurs amis…) ou client (AngularJS, GWT, Wicket, jQuery, Twitter Bootstrap). Il rejoint Zenika pour évoluer parmi des collègues qui ont la même ferveur et afin de partager (formations, conférences, ...) au maximum ses connaissances.</p> <p>Rendez-vous donc le 6 févirer 2014 à partir de 19h au zlocalhost.</p> <p><a href="https://nightclazz-angularjs-decouverte.eventbrite.fr">Informations &amp; inscriptions</a></p>

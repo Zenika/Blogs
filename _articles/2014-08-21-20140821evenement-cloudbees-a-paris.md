@@ -1,0 +1,17 @@
+---
+ID: 361
+post_title: Cloudbees le 11 septembre à Paris
+author: alecharpentier
+post_date: 2014-08-21 10:00:00
+post_excerpt: '<p>Le 11 septembre prochain, CloudBees organise un évènement autour du `Continuous Delivery`, nom de code "<strong>How to accelerate innovation with Continuous Delivery</strong>".<br /></p> <p>Rencontrez les plus grands experts sur le sujet lors de cette journée exceptionnelle.</p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=361
+published: true
+---
+<p>Le 11 septembre prochain, CloudBees organise un évènement autour du `Continuous Delivery`, nom de code "<strong>How to accelerate innovation with Continuous Delivery</strong>".<br /></p> <p>Rencontrez les plus grands experts sur le sujet lors de cette journée exceptionnelle.</p>
+<!--more-->
+<h3>TL;DR</h3> <p><strong><a href="https://www.eventbrite.com/e/how-to-accelerate-innovation-with-continuous-delivery-paris-tickets-12229287127?mkt_tok=3RkMMJWWfF9wsRokvq%2FLZKXonjHpfsX56e8qXaWg38431UFwdcjKPmjr1YAITcR0aPyQAgobGp5I5FEIQrPYTKt6t6AMWQ%3D%3D" hreflang="en" title="How to accelerate innovation with Continuous Delivery">Inscrivez-vous</a></strong>. <em>Inscriptions gratuites mais obligatoires</em>.</p> <p>Prenez vite votre place pour assister aux interventions de <a href="http://www.forrester.com/Kurt-Bittner" hreflang="en">Kurt Bittner</a>, <a href="http://www.cloudbees.com/company-team.cb#StevenHarris" hreflang="en">Steve Harris</a>, <a href="http://xebialabs.com/company/leadership/" hreflang="en">Andrew Phillips</a>, Pascal Cohen, <a href="http://www.cloudbees.com/company-team.cb#KohsukeKawaguchi" hreflang="en">Kohsuke Kawaguchi</a> et Steven Thwaites.</p> <p>Rendez-vous:</p> <p>le 11 septembre 2014 à partir de 8h<br />
+au Cap15<br />
+1/13 Quai de Grenelle à Paris</p> <p>Les conférences seront en anglais.</p> <h3>Au menu</h3> <p>La conférence ouvrira ses portes à 8h, les présentations commenceront à 9h avec l'intervention de Kurt Bittner de Forrester Research&nbsp;: "<strong>The Business of Continuous Delivery</strong>". Steve Harris Senior VP of Products chez CloudBees prendra la suite avec sa présentation&nbsp;: "<strong>Orchestrating the Continuous Delivery Process</strong>".</p> <p>Au retour d'une pause, Andrew Philipps VP of Products chez XebiaLabs vous propose son talk&nbsp;: "<strong>Automating Software Deployment: The Final Frontier</strong>". Pour clôturer cette matinée, Pascal Cohen d'Amadeus présentera son exposé sur "<strong>Le déploiement continu dans la vraie vie !</strong>".</p> <p><br />
+Déjeuner offert par CloudBees. <br />
+<br /></p> <p>Le créateur de Jenkins en personne et CTO de CloudBees, Kohsuke Kawaguchi parlera de l'<strong>Utilisation de Jenkins pour le déploiement continue</strong>. La société SOASTA quant à elle abordera le sujet des tests avec "<strong>Accelerating Application Delivery with Continuous Testing</strong>".</p> <p>Steven Thwaites de Puppet Labs nous présentera un talk sur l'<strong>Automatisation de l'infrastructure</strong>. Zenika terminera cette journée en vous présentant ses <strong>Best practices de déploiement continue</strong>.</p> <p>La journée se conclura par une table ronde avec tous les experts présents lors de cette journée. Posez-leurs toutes vos questions.</p> <p><br /></p> <p>En mode plus informel, vous êtes tous invités à participer au "<em>Continous Beer Delivery</em>" !<br /></p>

@@ -1,0 +1,18 @@
+---
+ID: 240
+post_title: SpringOne, question pour des champions
+author: ocroisier
+post_date: 2009-04-29 01:46:00
+post_excerpt: "<p>Vu les pointures qu'on croise à SpringOne, on serait fou de se priver de poser des questions. Des questions naïves de préférence, lancées un peu au hasard, mais qui peuvent fournir des réponses intéressantes, voire un scoop ou deux.</p>"
+layout: post
+permalink: http://blog.zenika-offres.com/?p=240
+published: true
+---
+<p>Vu les pointures qu'on croise à SpringOne, on serait fou de se priver de poser des questions. Des questions naïves de préférence, lancées un peu au hasard, mais qui peuvent fournir des réponses intéressantes, voire un scoop ou deux.</p>
+<!--more-->
+<p>Nous avons d'abord demandé à Guillaume Laforge ce que l'inclusion de la fonction <a href="http://jcp.org/en/jsr/detail?id=292">invokedynamics</a> dans Java7 changerait pour Groovy.<br />
+Guillaume explique que le processus de résolution des méthodes (qui permet de déterminer quel bytecode exécuter à l'appel d'une méthode) est relativement coûteux en Groovy&nbsp;: non seulement le langage Java lui-même est complexe (var-args, génériques, promotion des types des paramètres, covariance, overloading/overriding...), mais Groovy ajoute encore des niveaux d'indirection (Metaclass, GroovyObject, conversion dse GStrings en Strings...). <br />
+Depuis Groovy 1.6, le résultat de la résolution est mis en cache, ce qui se traduit par des gains de performance importants. Dans Groovy 1.7, la nouvelle méthode <em>invokedynamic</em> permettra de placer (au niveau bytecode) des liens directs vers les méthodes une fois celles-ci résolues&nbsp;; Guillaume s'attend donc à des performances très proches de celles de Java.</p> <p>Ensuite, nous avons interviewé Keith Donald, créateur de SpringWebFlow. <br />
+Actuellement, la configuration des flows est réalisée grâce à des fichiers de configuration XML, ce qui est très verbeux et peu pratique pour exprimer les traitements à exécuter lors des transitions entre les étapes. D'où la question bête&nbsp;: un système alternatif est-il prévu ?<br />
+En réalité, il y en a même deux&nbsp;:</p> <ul> <li>Par annotations sur des POJOs, à la mode SpringMVC&nbsp;: @Flow, @Transition...</li> <li>En Groovy</li> </ul> <p>Ces deux nouveautés devraient être annoncées avant SpringOne, c'est-à-dire dans deux mois. Mais chut, ne le répétez pas&nbsp;!</p> <p>Enfin, nous avons coincé et monopolisé Jürgen Höller en personne pour l'interroger sur sa vision du portfolio web de SpringSource dans son ensemble.</p> <ul> <li>SpringSource compte-t-il développer son propre framework web par composants&nbsp;? Ce n'est pas prévu car le besoin ne s'en fait pas sentir. Ils préfèrent donc travailler de concert avec les communautés des frameworks existants pour s'assurer de la qualité de leur intégration avec Spring ("play nice with the community").</li> <li>Et qu'en est-il d'un système de templating HTML&nbsp;? Pour le moment, l'intégration avec Tiles2 est disponible, mais Jürgen n'est pas très satisfait de la qualité de ce framework ni de la stabilité de son API (beaucoup de changements entre les versions 2.0 et 2.1 par exemple). L'effort d'intégration devrait donc être maintenu pendant les quelques mois restant avant la sortie de Spring 3.0, mais si le résultat est décevant, il n'est pas impossible que SpringSource se retrousse les manches et développe une solution maison.</li> </ul> <p>Enfin, dernier scoop&nbsp;: Rod Johson au piano, utilisant son PC comme lecteur de partition !<br />
+<br /></p> <p><img src="/wp-content/uploads/2015/07/RodJohnsonPiano.jpg" alt="RodJohnsonPiano.jpg" style="display:block; margin:0 auto;" /></p>

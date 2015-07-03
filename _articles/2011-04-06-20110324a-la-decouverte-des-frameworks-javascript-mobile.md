@@ -1,0 +1,17 @@
+---
+ID: 430
+post_title: >
+  A la découverte des frameworks
+  JavaScript mobile
+author: shadjiat
+post_date: 2011-04-06 10:45:00
+post_excerpt: '<p>Développer une application native pour mobile devient de plus en plus contraignant. En effet, entre Apple qui impose ses outils et son langage, Android et son développement en Java sans parler des autres plateformes BlackBerry, Symbian... Il serait bien pratique de trouver un outil pour faire des applications performantes compatibles avec toutes ces plateformes.<br /></p> <p>Et bien, une alternative possible est&nbsp;: le développement web&nbsp;!</p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=430
+published: true
+slide_template:
+  - ""
+---
+<p>Développer une application native pour mobile devient de plus en plus contraignant. En effet, entre Apple qui impose ses outils et son langage, Android et son développement en Java sans parler des autres plateformes BlackBerry, Symbian... Il serait bien pratique de trouver un outil pour faire des applications performantes compatibles avec toutes ces plateformes.<br /></p> <p>Et bien, une alternative possible est&nbsp;: le développement web&nbsp;!</p>
+<!--more-->
+<h2>Web vs natif<br /></h2> <p>Avec l'arrivée d'HTML5 et de ses fonctionnalités de stockage, de support multimédia, de géolocalisation et bien d'autres encore, les applications web gagnent en compétitivité.</p> <p>L'intérêt du développement web par rapport au natif est de pouvoir avoir une seule application compatible sur différents systèmes mobiles. Pas besoin d'apprendre l'objective C ou le Java, il suffit uniquement de connaître un peu de <strong>JavaScript</strong>, <strong>CSS</strong> et <strong>HTML</strong>. Ces applications s’exécutent sur le navigateur du mobile, et évitent ainsi de passer par les appStores. Elles sont cependant moins riches et moins performantes que les applications natives, et c'est là qu'interviennent les frameworks mobiles.</p> <p>On entend de plus en plus parler de ces librairies JavaScript qui facilitent le développement web, en intégrant la gestions des évènements et des transitions, des styles iphone/android, et même parfois le stockage sur navigateur et l'accès en mode déconnecté.</p> <p>Ces frameworks sont de plus en plus nombreux et pour la plupart encore en projet. Pour cette étude j'ai choisi d'en présenter trois qui sont parmi les plus connus&nbsp;: <strong>jQTouch</strong>, <strong>jQueryMobile</strong> et <strong>Sencha Touch</strong>.</p> <p>Durant les jours à venir je vais les étudier à tour de rôle et les évaluer suivant plusieurs critères:</p> <ul> <li>Portabilité&nbsp;: performance sur différentes plateformes, compatibilité avec d'autres librairies</li> <li>Légèreté du framework</li> <li>Apparence&nbsp;: "look and feel" proche du natif, fluidité et interactivité</li> <li>Richesse en composants&nbsp;: APIs HTML5, widgets</li> <li>Possibilités de personnalisation</li> </ul> <p>Pour mieux comparer ces outils, j'ai développé une application de <strong>démo</strong> simple qui se présente sous la forme d'un agenda et qui utilisera plusieurs fonctionnalités <strong>HTML5</strong>&nbsp;: nouveaux formulaires, géolocalisation et stockage local.</p> <p>Dans les prochains articles, je présenterai chaque framework à travers cet exemple qui me permettra à la fin de réaliser une étude comparative précise.</p> <p>Le prochain billet sera consacré à <strong>jQTouch</strong>, l'une des premières librairies pour le web mobile, basée sur le célèbre <strong>jQuery</strong>.</p>

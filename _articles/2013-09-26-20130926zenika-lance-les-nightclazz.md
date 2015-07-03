@@ -1,0 +1,13 @@
+---
+ID: 31
+post_title: Zenika lance les NightClazz !
+author: Al Amine Ousman
+post_date: 2013-09-26 11:00:00
+post_excerpt: '<p>Zenika et sa communauté d’experts Open Source et méthodes Agiles vous propose de nouveaux événements techniques :<strong> les NightClazz</strong>&nbsp;!</p> <p>Ces événements techniques par excellence, permettent à la communauté Open Source de bénéficier des compétences des consultants / formateurs Zenika pour découvrir les dernières technologies et coder.</p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=31
+published: true
+---
+<p>Zenika et sa communauté d’experts Open Source et méthodes Agiles vous propose de nouveaux événements techniques :<strong> les NightClazz</strong>&nbsp;!</p> <p>Ces événements techniques par excellence, permettent à la communauté Open Source de bénéficier des compétences des consultants / formateurs Zenika pour découvrir les dernières technologies et coder.</p>
+<!--more-->
+<p>Un thème technique sera traité sur 2 mois et donnera lieu à des NightClazz tous les 1er jeudis de chaque mois. Réparties sur 2 niveaux, découverte et avancé, les NightClazz vous permettront de découvrir des technologies et monter en compétences.</p> <p>Le thème d’octobre et novembre sera le BigData. Pour les premières NightClazz, nous vous proposons des soirées ElasticSearch.</p> <p>La session découverte aura lieu le 3 octrobre 2013 chez <a href="https://maps.google.fr/maps?q=10+rue+de+milan+75009&amp;ie=UTF8&amp;hnear=10+Rue+de+Milan,+75009+Paris,+%C3%8Ele-de-France&amp;gl=fr&amp;t=m&amp;z=14&amp;iwloc=A">Zenika Paris</a></p> <h5>Pourquoi participer aux NightClazz&nbsp;:</h5> <ul> <li>Découvrir des technologies innovantes et performantes</li> <li>Avoir un regard critique sur ce que l’on vous présente</li> <li>Ne plus sortir de conférence sans avoir même touché au code</li> <li>L’opportunité de choisir le niveau qui vous corresponde. Fini l’ennui&nbsp;!</li> <li>Des petits groupes pour bien comprendre le code</li> <li>Des consultants formés à la pédagogie pour répondre à vos questions</li> <li>De véritables experts pour vous former</li> <li>Des réductions pour assister à nos formations !!!</li> </ul> <h5>Pré-requis&nbsp;:</h5> <p>Que vous soyez novice sur le sujet traité ou connaisseur, vous trouverez dans ces NightClazz le niveau qui vous correspond et un accompagnement de proximité vous permettant de vous approprier l’outil.</p> <p>Inscrivez-vous vite, les places sont limitées&nbsp;: <a href="https://nightclazz-es-decouverte.eventbrite.com/">https://nightclazz-es-decouverte.eventbrite.com/</a></p> <p><em>Buffet dînatoire offert par Zenika pour toutes les sessions.</em></p>

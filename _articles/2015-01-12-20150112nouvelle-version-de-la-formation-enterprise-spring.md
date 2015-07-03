@@ -1,0 +1,13 @@
+---
+ID: 48
+post_title: 'Nouvelle version de la formation &quot;Enterprise Spring&quot;'
+author: Arnaud Cogoluègnes
+post_date: 2015-01-12 15:37:00
+post_excerpt: '<p>Avec la formation "Enterprise Integration with Spring", Zenika a le plaisir depuis de nombreuses années de vous former avec succès sur la partie "enterprise" des technologies Spring (web services, messaging, batch). Cette formation vient d’être renommée en <a href="http://www.zenika.com/formation-enterprise-spring.html">"Enterprise Spring"</a> et ce renommage vient avec son lot de nouveautés&nbsp;!</p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=48
+published: true
+---
+<p>Avec la formation "Enterprise Integration with Spring", Zenika a le plaisir depuis de nombreuses années de vous former avec succès sur la partie "enterprise" des technologies Spring (web services, messaging, batch). Cette formation vient d’être renommée en <a href="http://www.zenika.com/formation-enterprise-spring.html">"Enterprise Spring"</a> et ce renommage vient avec son lot de nouveautés&nbsp;!</p>
+<!--more-->
+<p>La formation "Enterprise Spring" vous permet de découvrir les meilleures techniques d’intégration et de les mettre immédiatement en pratique avec les différentes briques de Spring&nbsp;: Spring MVC REST, Spring Web Services pour SOAP, Spring JMS et AMPQ et enfin Spring Integration et Spring Batch. Les avantages et inconvénients de chaque technique sont clairement mis en évidence afin de vous permettre de choisir la solution la plus adaptée à vos applications.</p> <p>Voici les principales nouveautés de cette mise à jour&nbsp;:</p> <ul> <li>Nouveau module sur <a href="http://projects.spring.io/spring-amqp/">Spring AMQP</a>, pour utiliser des messages asynchrones avec Spring et <a href="http://www.rabbitmq.com/">RabbitMQ</a></li> <li>Refonte du module REST</li> <li>Un module supplémentaire sur Spring Integration</li> <li>Nombreuses figures ajoutées dans les différents modules (Spring Integration, scaling et parallélisation avec Spring Batch)</li> <li>Certification mise à jour en conséquence</li> </ul> <p>Les technologies Spring ne cessent d’évoluer pour nous permettre d’écrire des applications encore plus sophistiquées et robustes, tout en conservant la simplicité qui a fait la force de Spring. La formation "Enterprise Spring" et Zenika sont là pour vous faire monter rapidement en compétences, nous <a href="http://www.zenika.com/formation-enterprise-spring.html">vous attendons avec impatience</a>&nbsp;!</p>

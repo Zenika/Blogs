@@ -1,0 +1,16 @@
+---
+ID: 300
+post_title: 3ème anniversaire du ParisJUG
+author: orudent
+post_date: 2011-02-15 12:20:00
+post_excerpt: |
+  <p><strong>Le 28 février le ParisJUG fêtera son anniversaire à la Cité Universitaire.</strong></p> <p>Pour cette troisième année, le <a href="http://www.parisjug.org/xwiki/bin/view/Main/WebHome">ParisJUG</a> nous propose de "Siffler en travaillant" avec comme objectif de montrer qu'il est sympa de travailler sur Java et son écosystème.</p> <p>Cet anniversaire annonce une nouvelle année riche en Java&nbsp;!</p> <p><img src="/public/Billet_0245/banner_anniv_pjug_20110228.png" alt="Anniversaire ParisJUG" title="Anniversaire ParisJUG" /></p> <p>C'est avec grand plaisir que <strong><a href="http://www.zenika.com?fg=50007">Zenika</a></strong> va accompagner une nouvelle fois le <a href="http://www.parisjug.org/xwiki/bin/view/Main/WebHome">ParisJUG</a> en tant que <strong>sponsor platinium</strong> en soutenant activement l'effort du ParisJUG dans sa contribution et son partage des connaissances avec la communauté.</p>
+layout: post
+permalink: http://blog.zenika-offres.com/?p=300
+published: true
+---
+<p><strong>Le 28 février le ParisJUG fêtera son anniversaire à la Cité Universitaire.</strong></p> <p>Pour cette troisième année, le <a href="http://www.parisjug.org/xwiki/bin/view/Main/WebHome">ParisJUG</a> nous propose de "Siffler en travaillant" avec comme objectif de montrer qu'il est sympa de travailler sur Java et son écosystème.</p> <p>Cet anniversaire annonce une nouvelle année riche en Java&nbsp;!</p> <p><img src="/wp-content/uploads/2015/07/banner_anniv_pjug_20110228.png" alt="Anniversaire ParisJUG" title="Anniversaire ParisJUG" /></p> <p>C'est avec grand plaisir que <strong><a href="http://www.zenika.com?fg=50007">Zenika</a></strong> va accompagner une nouvelle fois le <a href="http://www.parisjug.org/xwiki/bin/view/Main/WebHome">ParisJUG</a> en tant que <strong>sponsor platinium</strong> en soutenant activement l'effort du ParisJUG dans sa contribution et son partage des connaissances avec la communauté.</p>
+<!--more-->
+<p>Plusieurs thèmes, plus ou moins techniques, seront abordés, à l'occasion de 8 conférences de 15 minutes. Elles seront précédées d'un keynote d'ouverture animé par Nicole Turbé-Suetens.</p> <blockquote><p>L'indépendance, GTD, la mise en place d'une application sur l'Android Market,... Découvrez le <strong><a href="http://www.parisjug.org/xwiki/bin/view/Meeting/20110228">programme</a></strong>.</p></blockquote> <h2>Nous y seront&nbsp;! <br /></h2> <p><br />
+Dans la continuité du thème de la soirée, nous organiserons un <strong>tirage au sort</strong> pour faire gagner une place à la <strong><a href="http://www.whatsnextparis.com">What's Next</a></strong>&nbsp;!</p> <p>Nous aurons le plaisir de vous retrouver à la pause, prêt du buffet, où une surprise vous attendra sur notre stand! ;) Nous n'en dirons pas plus...</p> <p><strong>Les <a href="http://www.parisjug.org/xwiki/bin/view/Meeting/20110228">inscriptions</a> sont d'ores et déjà ouvertes !</strong><br />
+N'hésitez plus et inscrivez-vous&nbsp;!</p>

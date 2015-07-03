@@ -1,0 +1,13 @@
+---
+ID: 229
+post_title: Retour sur la soirée JBoss au Paris JUG
+author: Grégory Boissinot
+post_date: 2008-12-03 17:19:00
+post_excerpt: '<p>Passionnante soirée au Paris JUG ce mardi. Composée de deux parties et d’une troisième pour certains d’entre nous, cela a été l’occasion de découvrir les nouveautés de JBossAS5.0 et pour notre part de discuter avec un intervenant de Redhat sur le framework Seam.</p>'
+layout: post
+permalink: http://blog.zenika-offres.com/?p=229
+published: true
+---
+<p>Passionnante soirée au Paris JUG ce mardi. Composée de deux parties et d’une troisième pour certains d’entre nous, cela a été l’occasion de découvrir les nouveautés de JBossAS5.0 et pour notre part de discuter avec un intervenant de Redhat sur le framework Seam.</p>
+<!--more-->
+<p>La présentation du framework Seam de <a href="http://www.parisjug.org/xwiki/bin/view/Speaker/SahebMalik">Malik Saheb</a>, architecte chez JBoss, était très classique puisque destinée en premier lieu aux personnes ne connaissant pas JBoss Seam et souhaitant découvrir les fonctionnalités de ce fascinant framework. C’est pourquoi nous n’aborderons pas dans ce post les détails de JBoss Seam.</p> <p>Cependant, s’il ne fallait retenir qu’une chose&nbsp;: Seam est un framework qui assemble des technologies nécessaires au développement d’une application internet riche. Conçu au départ pour l’unification des standards JSF1.2 et EJB3.0, il se renouvelle aujourd’hui en proposant une intégration d’un important éventail  de composants. Parmi lesquels, on notera par exemple GWT et Wicket pour la partie présentation, le scheduler Quartz ou même les web services REST. Il faut aussi retenir que JBoss Seam a poussé les nouveaux standards JSF2.0 et EJB3.1(WebBeans-<a href="http://jcp.org/en/jsr/detail?id=299">JSR299</a>) de JEE 6.</p> <p>Notre première question posée a concerné la problématique de la gestion de la comptabilité ascendante. En effet, quelle douleur pour migrer ses applications JBoss Seam lors de la sortie d’une nouvelle version, y compris sur des versions mineures. Prenons, l’exemple récent du passage de 2.0 à 2.1, où ils ont changé le package de la sécurité obligeant une refactorisation du code des applications. Quel anti-pattern du développement logiciel! Cela été également l’occasion de discuter des limites de la bijection et de privilégier les Seam EL. Au delà de tout cela, nous attendons avec impatience la sortie de Seam 3, prévue l’année prochaine. Pour cette future version, Seam prévoit de ré-écrire son core pour WebBeans</p> <p>(<a href="http://in.relation.to/Bloggers/Seam3">http://in.relation.to/Bloggers/Seam3</a>).</p>

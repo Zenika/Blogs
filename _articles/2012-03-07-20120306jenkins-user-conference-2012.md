@@ -1,0 +1,11 @@
+---
+ID: 30
+post_title: Jenkins User Conference 2012
+author: pqueinnec
+post_date: 2012-03-07 09:45:00
+post_excerpt: ""
+layout: post
+permalink: http://blog.zenika-offres.com/?p=30
+published: true
+---
+<p>Dans la lignée de la conférence Jenkins organisée juste avant la JavaOne, CloudBees lance une <a href="http://www.cloudbees.com/juc2012.cb">série de conférences</a> dans le monde permettant de réunir les utilisateurs et les développeurs de Jenkins. Heureusement, l'une d'entre elles se tiendra à Paris, le 17 avril exactement. Et nous y serons! A double titre, celui de Sponsor car nous sommes heureux de pouvoir aider, mais aussi en tant qu'utilisateurs et développeurs. A ce titre, <a href="http://zenika.com/experts/gregory_boissinot">Grégory Boissinot</a> présentera un talk le matin, et sera présent à la table ronde en clôture.  Il ne sera pas seul, car d'autres contributeurs de plugins de Zenika ne manqueront pas cette occasion.</p> <p>J'en profite pour tourner une page de publicité et rappeler que Zenika est le partenaire de CloudBees en France sur le domaine Jenkins et plus largement sur l'Intégration Continue. Nous réalisons pour nos clients des développements de plugins Jenkins spécifiques, des adaptations à leurs workflows ou à leurs habitudes de travail, ou des intégrations à leurs systèmes tiers.</p> <p>Par ailleurs, nous accompagnons régulièrement et de façon pratique nos clients dans leurs démarches d'industrialisation des développements, jusqu'à l'automatisation complète des livraisons (Continuous Delivery). Ceci aussi bien dans des contextes Java "purs" que dans des cas industriels mêlant tous types de technologies (C/C++/Ada/Java, etc), avec des contraintes très fortes de reproductibilité dans le temps. N'hésitez pas à nous contacter pour toute question ou demande.</p> <p>Je vous invite à consulter le programme de la <a href="http://www.cloudbees.com/jenkins-user-conference-2012-paris.cb">Jenkins User Conference (JUC) 2012</a>, et nous espérons vous y croiser!</p>
