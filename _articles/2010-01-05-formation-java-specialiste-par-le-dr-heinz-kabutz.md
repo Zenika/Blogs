@@ -8,7 +8,7 @@ post_date: 2010-01-05 10:00:00
 post_excerpt: ""
 layout: post
 permalink: >
-  http://blog.zenika-offres.com/20100105formation-java-specialiste-par-le-dr-heinz-kabutz/
+  http://blog.zenika-offres.com/formation-java-specialiste-par-le-dr-heinz-kabutz/
 published: true
 slide_template:
   - default
