@@ -7,7 +7,7 @@ post_excerpt: |
   <p>La conférence NoSQL matters Paris 2015, dont <a href="http://blog.zenika.com/index.php?post/2015/02/23/Zenika-Conference-Partner-du-NoSQL-matters-Paris-2015">Zenika était partenaire</a> s'est tenue les 26 et 27 mars derniers. Après une première journée consacrée à des ateliers pratiques, la seconde journée était dédiée à des présentations dont vous trouverez un résumé dans cet article.<br /></p> <p><img src="/public/Al/NoSQLmatters/Nosqlmatters.png" alt="Nosqlmatters.png" style="display:block; margin:0 auto;" /></p>
 layout: post
 permalink: >
-  http://blog.zenika-offres.com/20150401retour-sur-le-nosql-matters-paris-2015/
+  http://blog.zenika-offres.com/retour-sur-le-nosql-matters-paris-2015/
 published: true
 slide_template:
   - default
