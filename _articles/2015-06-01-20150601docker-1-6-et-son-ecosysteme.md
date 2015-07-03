@@ -1,6 +1,6 @@
 ---
 ID: 496
-post_title: 'Docker 1.6 et son écosystème &#8211; cache test'
+post_title: Docker 1.6 et son écosystème
 author: vdemeester
 post_date: 2015-06-01 21:47:00
 post_excerpt: |
