@@ -1,12 +1,12 @@
 ---
 ID: 3205
-post_title: Docker 1.6 et son écosystème 2
+post_title: Docker 1.6 et son écosystème
 author: vdemeester
 post_date: 2015-06-01 13:57:30
 post_excerpt: ""
 layout: post
 permalink: >
-  http://blog.zenika-offres.com/docker-2-6/
+  http://blog.zenika-offres.com/20150601docker-1-6-et-son-ecosysteme-2/
 published: true
 slide_template:
   - default
