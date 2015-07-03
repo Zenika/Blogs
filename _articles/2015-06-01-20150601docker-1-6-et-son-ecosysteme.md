@@ -4,9 +4,7 @@ post_title: Docker 1.6 et son écosystème
 author: vdemeester
 post_date: 2015-06-01 21:47:00
 post_excerpt: |
-  <p> Le 28 octobre dernier, nous avions parlé de la sortie de Docker 1.3, des évolutions entre la version 1 et cette dernière et de son écosystème. Je vous propose de remettre ça, bientôt 6 mois après, avec un peu le même plan : les principales nouveautés entre la version 1.3 et 1.6 (et il y en a <code>;-)</code>), l'évolution de l'écosystème qui gravite autour et un peu de <em>social</em> avec les meetups et évènements qui se sont passés depuis. </p>  
-  
-  <p> Rappel <em>ultra</em> rapide, <strong>Docker est une plate-forme ouverte à destination des développeurs et administrateurs systèmes visant à faciliter la construction et le déploiement d'applications distribuées</strong>. De manière moins marketing, l'idée derrière Docker est d'automatiser le déploiement d'environnements sous forme de conteneurs légers, portables et auto-suffisants ; les conteneurs permettant d'isoler l'exécution des applications dans des contextes d'exécution. Pour ce faire, Docker, écrit en Go, reprend les bases de LXC, utilise les fonctionnalités du noyau Linux (CGroups, Namespaces, …) et se base initialement sur un système de fichier "en oignons" AUFS ; D'autres backends sont supportés également comme BTRFS ou devicemapper (LVM). </p>
+  <p> Le 28 octobre dernier, nous avions parlé de la sortie de Docker 1.3, des évolutions entre la version 1 et cette dernière et de son écosystème. Je vous propose de remettre ça, bientôt 6 mois après, avec un peu le même plan : les principales nouveautés entre la version 1.3 et 1.6 (et il y en a <code>;-)</code>), l'évolution de l'écosystème qui gravite autour et un peu de <em>social</em> avec les meetups et évènements qui se sont passés depuis. </p> <div class="figure"> <p><img src="http://blog.zenika.com/public/Billet_0511/docker_container_engine_logo.png" alt="docker_container_engine_logo.png" /> </p> </div> <p> Rappel <em>ultra</em> rapide, <strong>Docker est une plate-forme ouverte à destination des développeurs et administrateurs systèmes visant à faciliter la construction et le déploiement d'applications distribuées</strong>. De manière moins marketing, l'idée derrière Docker est d'automatiser le déploiement d'environnements sous forme de conteneurs légers, portables et auto-suffisants ; les conteneurs permettant d'isoler l'exécution des applications dans des contextes d'exécution. Pour ce faire, Docker, écrit en Go, reprend les bases de LXC, utilise les fonctionnalités du noyau Linux (CGroups, Namespaces, …) et se base initialement sur un système de fichier "en oignons" AUFS ; D'autres backends sont supportés également comme BTRFS ou devicemapper (LVM). </p>
 layout: post
 permalink: http://blog.zenika-offres.com/?p=496
 published: true
@@ -34,32 +32,23 @@ Par défaut les containers qui seront créés n'auront qu'une adresse locale. Po
 <pre class="src src-sh"><span style="color: #783778;">docker</span> <span style="color: #43783f;">-d</span> <span style="color: #374478;">--ipv6</span> <span style="color: #78683f;">--fixed-cidr-v6</span>=<span style="color: #008000;">"2001:db8:1::/64"</span></pre>
 </div>
 Comme je ne suis pas un pro de l'IPv6, pour plus d'information, et si l'anglais ne vous fait pas peur, c'est dans la <a href="https://docs.docker.com/articles/networking/#ipv6">documentation "networking"</a> de Docker.
-
 <h2>Conteneurs en lecture seule (1.5.0)</h2>
-
 Une autre fonctionnalité assez sympathique qui est arrivé avec cette version 1.5.0 est les conteneurs en lecture seule — c'est Michael Crosby qui s'est occupé d'<a href="https://github.com/docker/docker/pull/10093">implémenter ça</a>. L'intérêt des conteneurs en lecture seule est de permettre de <strong>contrôler où l'application</strong> à l'intérieur de votre conteneur <strong>peut écrire ou modifier des fichiers</strong>. En combinant ceci avec les volumes, vous pouvez vous assurez des emplacements dans lesquels votre conteneur va persister des états ou données (le/les volumes), puisqu'il ne sera pas possible d'écrire ailleurs de toute façon.
 
 Pour activer cette fonctionnalité, c'est l'argument <code>--read-only</code>.
-
 <pre class="src src-sh"><span style="color: #783778;">docker</span> <span style="color: #513f78;">run</span> <span style="color: #43783f;">--read-only</span> <span style="color: #5e7837;">-v</span> <span style="color: #5e7837;">/volume/writable</span> <span style="color: #3f7178;">busybox</span> <span style="color: #783778;">touch</span> <span style="color: #5e7837;">/volume/writable</span></pre>
-
 Une autre utilisation des conteneurs en lecture seule est que cela donne la possibilité de faire du debug <em>post-mortem</em> d'un conteneur (en production par exemple). Cela nous permet de redémarrer un conteneur qui aurait planté, en lecture seule avec le système de fichier dans l'état du crash.
-
 <h2>Les labels pour le « daemon », les images et les conteneurs (1.6.0)</h2>
-
 <blockquote>One Meta Data to Rule Them All</blockquote>
 Une des deux fonctionnalités très attendue de la récente version 1.6.0 sont les labels. En un mot, et pour le faire « à-la » <em>le seigneur des anneaux</em>, les labels peuvent se résumer en "<strong>Une metadata pour les gouverner tous</strong>" (ça le fait vachement mieux en anglais en fait).
 
 Les labels s'appliquent sur le <em>daemon</em>, les images et les conteneurs. C'est un peu un mélange entre des tags et des variables d'environnements puisque il s'agit d'un couple <strong>clé/valeur</strong>.
 
 L'ajout de label sur le <em>daemon</em> se fait grâce à l'argument — roulement de tambour — <code>--label</code> (<code>o/</code>). La principale utilité pour l'instant est son utilisation conjointe avec Swarm dont nous parlerons un peu plus bas ; mais en deux mots, cela permet de filtrer les <em>engines</em> sur lesquels on va <em>taper</em>.
-
 <pre class="src src-sh"><span style="color: #8d8d84;"># </span><span style="color: #8d8d84; font-style: italic;">Souvent, c'est dans DOCKER_OPTS du fichier /etc/default/docker</span> <span style="color: #783778;">docker</span> <span style="color: #43783f;">-d</span> <span style="color: #784437;">-H</span> <span style="color: #4f5c7e;">unix://var/run/docker.sock</span> <span style="color: #7a4f7e;">--label</span> <span style="color: #ba36a5;">storage</span>=<span style="color: #5e7837;">ssd</span> <span style="color: #7a4f7e;">--label</span> <span style="color: #ba36a5;">type</span>=<span style="color: #5e7837;">laptop</span></pre>
-
 L'ajout d'un label sur une image se fait dans le fichier <code>Dockerfile</code>, et l'ajout d'un label sur un conteneur, grâce à l'argument <code>--label</code> pour rester cohérent. Construisons une image inutile mais en lui appliquant un label :
 <div class="org-src-container">
 <pre class="src src-sh"><span style="color: #37785e;">FROM</span> <span style="color: #3f7178;">busybox</span> <span style="color: #8d8d84;"># </span><span style="color: #8d8d84; font-style: italic;">Support du multi-line pour LABEL</span> <span style="color: #783778;">LABEL</span> <span style="color: #ba36a5;">vendor</span>=<span style="color: #78683f;">zenika</span>  <span style="color: #784437;">com.zenika.lang</span>=<span style="color: #374478;">golang</span>  <span style="color: #78683f;">com.zenika.version</span>=<span style="color: #43783f;">0.1</span> <span style="color: #7a4f7e;">CMD</span> [<span style="color: #008000;">"echo"</span><span style="color: #7e544f;">,</span> <span style="color: #008000;">"zenika"</span>]</pre>
-
 Nous allons maintenant construire cette image et lancer un conteneur à partir de cette dernière avec un autre label.
 <div class="org-src-container">
 <pre class="src src-sh">$ <span style="color: #783778;">docker</span> <span style="color: #7e544f;">build</span> -t <span style="color: #4f7e67;">zenikaapp</span> <span style="color: #374478;">.</span> <span style="color: #8d8d84;"># </span><span style="color: #8d8d84; font-style: italic;">[…]</span> $ <span style="color: #783778;">docker</span> <span style="color: #513f78;">run</span> <span style="color: #4f5c7e;">--name</span> <span style="color: #783f5a;">test</span> <span style="color: #7a4f7e;">--label</span> <span style="color: #783f5a;">com.zenika.foo</span>=<span style="color: #784437;">bar</span> <span style="color: #4f7e67;">zenikaapp</span> <span style="color: #78683f;">zenika</span></pre>
@@ -72,7 +61,6 @@ On peut imaginer beaucoup d'usage de ces labels. Par example, avec <a href="http
 
 Il y a une partie de la documentation qui parle exclusivement des labels, avec une petite partie sur les <em>best-practice</em> de nommage des labels, c'est <a href="https://docs.docker.com/userguide/labels-custom-metadata/">ici</a>.
 
-</div>
 </div>
 <div id="outline-container-sec-6" class="outline-2">
 <h2 id="sec-6">Logging drivers o/ (1.6.0)</h2>
