@@ -5,16 +5,17 @@ author: Al Amine Ousman
 post_date: 2015-06-22 16:06:00
 post_excerpt: '<p>Zenika a le plaisir de recevoir <strong>Simon Brown</strong> qui viendra nous présenter son talk "<a href="http://www.zenika.com/conference-software-as-code.html">Software architecture as a code</a>" le mardi 7 juillet à partir de 19h.</p> <p><img src="/public/Al/slide.001.png" alt="slide.001.png" style="display:block; margin:0 auto;" /></p>'
 layout: post
-permalink: http://blog.zenika-offres.com/?p=392
+permalink: >
+  http://blog.zenika-offres.com/20150622simon-brown-au-zlocalhost-le-mardi-7-juillet-2015/
 published: true
 slide_template:
   - default
 ---
 Zenika a le plaisir de recevoir <strong>Simon Brown</strong> qui viendra nous présenter son talk "<a href="http://www.zenika.com/conference-software-as-code.html">Software architecture as a code</a>" le mardi 7 juillet à partir de 19h.
 
-<img style="display: block; margin: 0 auto;" src="/wp-content/uploads/2015/07/slide.001.png" alt="slide.001.png" />
-
 <!--more-->
+
+<img class=" aligncenter" src="/wp-content/uploads/2015/07/slide.001.png" alt="slide.001.png" />
 <h4>Description</h4>
 Over the past few years, I’ve been distilling software architecture down to its essence, helping organisations adopt a lightweight style of software architecture that complements agile approaches. This includes doing "just enough" up front design to understand the significant structural elements of the software, some lightweight sketches to communicate that vision to the team, identifying the highest priority risks and mitigating them with concrete experiments. Software architecture is inherently about technical leadership, stacking the odds of success in your favour and ensuring that everybody is heading in the same direction.
 
