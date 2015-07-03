@@ -17,10 +17,6 @@ slide_template:
 ---
 Zenika était présent pour la “Stratégies Digital Week”, qui s’est déroulée dans les locaux de Microsoft, à Issy­ les Moulineaux. Comme le titre l’annonçait il s’agissait de juger de l’efficacité du numérique dans le domaine « marketing » tout particulièrement du traitement de la data, des stratégies numériques…
 
-<img style="display: block; margin: 0 auto;" title="Stratégies Digital Week" src="/wp-content/uploads/2015/07/strat.png" alt="Stratégies Digital Week" />
-
-<!--more-->
-
 Les tables rondes telles que : «<em> Personnaliser l’expérience client : un enjeu commercial incontournable</em> », « <em>Multi-devices et géolocalisation</em> », ou «<em> Le design, clé de la création &amp; accélérateur d’usage</em> » ou encore « <em>La Data au service d’une meilleure connaissance client : quand la donnée devient un avantage concurrentiel</em> » mettaient le client (et la data liée à celui-ci) au centre des préoccupations du marketing digitale.
 <h3>Des conclusions intéressantes sur les enjeux stratégiques digitaux :</h3>
 <ul>
