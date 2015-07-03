@@ -6,7 +6,8 @@ post_date: 2015-07-01 10:15:00
 post_excerpt: |
   <p>En tant qu'acteur du mouvement Software Craftsmanship, Zenika se devait d'être présent à la conférence NCrafts 2015. Nous ne l'avons pas regretté, les interventions étaient vraiment d'excellente qualité! Nous proposons un compte-rendu détaillé à ceux qui n'ont pas eu la chance de s'y rendre.</p> <p><img src="/public/_Claisse/ncraft2015/nscrafts2015.png" alt="nscrafts2015.png" style="display:block; margin:0 auto;" /></p>
 layout: post
-permalink: http://blog.zenika-offres.com/?p=503
+permalink: >
+  http://blog.zenika-offres.com/20150701ncraft-2015-jour-1-interaction-driven-design/
 published: true
 slide_template:
   - default
@@ -14,10 +15,6 @@ slide_template:
 En tant qu'acteur du mouvement Software Craftsmanship, Zenika se devait d'être présent à la conférence NCrafts 2015. Nous ne l'avons pas regretté, les interventions étaient vraiment d'excellente qualité ! Nous proposons un compte-rendu détaillé à ceux qui n'ont pas eu la chance de s'y rendre.
 
 <!--more-->
-
-<!--more-->
-
-
 
 <img src="/wp-content/uploads/2015/06/Ncrafts.jpg" alt="nscrafts2015.png" />
 <h3>Interaction driven design</h3>
