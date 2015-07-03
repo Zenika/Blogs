@@ -10,7 +10,8 @@ post_excerpt: |
   <p>Zenika Training a le plaisir de vous annoncer l’ajout de la <a href="http://www.zenika.com/formation-docker.html">Formation Docker</a> à son catalogue.</p> <p>La première session de cette formation aura lieu <strong>le 12 mars à Paris</strong> et sera animée par <a href="https://twitter.com/jpetazzo">Jérome Petazzoni</a>, senior enginners chez Docker, la seconde sera dispensée dans <strong>notre agence lyonnaise le 16 mars 2015</strong>. <br /><br /></p> <p><img src="/public/Al/ban_mail_docker.png" alt="ban_mail_docker.png" style="display:block; margin:0 auto;" /><br />
   <br /></p>
 layout: post
-permalink: http://blog.zenika-offres.com/?p=221
+permalink: >
+  http://blog.zenika-offres.com/formation-docker-avec-jerome-petazzoni-le-12-mars-a-paris-et-le-16-mars-a-lyon/
 published: true
 slide_template:
   - default
