@@ -16,7 +16,7 @@ slide_template:
   - default
 ---
 A l'occasion de la venue dans ses locaux du créateur de Tapestry Howard Lewis Ship, Zenika organise une conférence et une formation.
-<h2>Conférence</h2>
+Conférence
 Durant cette <a href="http://www.zenika.com/conference/web_ria/clojure-essence-de-programmation-par-howard-lewis-ship?fg=50001">conférence Clojure : Vers l'essence de la programmation</a>, Howard Lewis Ship mettra en avant le besoin de regarder au delà des langages de programmation courant et expliquera les raisons de l'attractivité de Clojure en tant que langage de nouvelle génération. Il donnera également les clés du succès de la programmation fonctionnelle et, plus généralement, montrera la nécessité de penser parfois différemment.
 
 La conférence aura lieu lundi <strong>15 février à 19h</strong> dans les locaux de Zenika (Paris).
