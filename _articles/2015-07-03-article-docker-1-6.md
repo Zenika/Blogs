@@ -11,7 +11,7 @@ published: true
 slide_template:
   - default
 ---
-Le 28 octobre dernier, nous avions parlé de la sortie de Docker 1.3, des évolutions entre la version 1 et cette dernière et de son écosystème. Je vous propose de remettre ça, bientôt 6 mois après, avec un peu le même plan : les principales nouveautés entre <!--more-->la version 1.3 et 1.6 (et il y en a <code>;-)</code>), l'évolution de l'écosystème qui gravite autour et un peu de <em>social</em> avec les meetups et évènements qui se sont passés depuis.
+Le 28 octobre dernier, nous avions parlé de la sortie de Docker 1.3,<!--more--> des évolutions entre la version 1 et cette dernière et de son écosystème. Je vous propose de remettre ça, bientôt 6 mois après, avec un peu le même plan : les principales nouveautés entrela version 1.3 et 1.6 (et il y en a <code>;-)</code>), l'évolution de l'écosystème qui gravite autour et un peu de <em>social</em> avec les meetups et évènements qui se sont passés depuis.
 
 &nbsp;
 
