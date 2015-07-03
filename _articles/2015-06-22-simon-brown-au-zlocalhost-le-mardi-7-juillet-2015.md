@@ -6,7 +6,7 @@ post_date: 2015-06-22 16:06:00
 post_excerpt: '<p>Zenika a le plaisir de recevoir <strong>Simon Brown</strong> qui viendra nous présenter son talk "<a href="http://www.zenika.com/conference-software-as-code.html">Software architecture as a code</a>" le mardi 7 juillet à partir de 19h.</p> <p><img src="/public/Al/slide.001.png" alt="slide.001.png" style="display:block; margin:0 auto;" /></p>'
 layout: post
 permalink: >
-  http://blog.zenika-offres.com/20150622simon-brown-au-zlocalhost-le-mardi-7-juillet-2015/
+  http://blog.zenika-offres.com/simon-brown-au-zlocalhost-le-mardi-7-juillet-2015/
 published: true
 slide_template:
   - default
