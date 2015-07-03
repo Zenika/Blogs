@@ -5,7 +5,8 @@ author: Raphaël Martignoni
 post_date: 2014-07-22 14:00:00
 post_excerpt: "<p>Depuis 2009 App Engine met les serveurs de Google à la disposition de ses utilisateurs, afin d'y héberger leurs sites web. Cette solution permet de libérer les développeurs des problématiques de déploiement et de scalabilité. Ces dernières sont gérées entièrement par Google, la mise à l’échelle se faisant par la création automatique de nouvelles instances. Le modèle, qui permet aux usagers de la plateforme de payer proportionnellement aux capacités utilisées dans l’infrastructure, a déjà séduit beaucoup d’entreprises. Mais le service met surtout à disposition une plateforme de développement. Quatre langages d'exécution sont disponibles (Java, Python, Go, PHP), et de nombreux services sont accessibles &nbsp;: inutile par exemple de maintenir son propre serveur mail ou de base de données, App Engine fournit ces services et bien d'autres.&nbsp;</p>"
 layout: post
-permalink: http://blog.zenika-offres.com/?p=202
+permalink: >
+  http://blog.zenika-offres.com/les-nouveautes-app-engine/
 published: true
 slide_template:
   - default
