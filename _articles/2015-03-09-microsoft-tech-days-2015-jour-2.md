@@ -1,8 +1,8 @@
 ---
 ID: 380
-post_title: 'Microsoft Tech Days 2015 &#8211; Jour 2'
+post_title: Microsoft Tech Days 2015 – Jour 2
 author:
-  - lclaisse
+  - Laurent Claisse
 post_date:
   - 2015-03-09 16:21:00
 post_excerpt:
@@ -66,11 +66,11 @@ Les Arduino et RaspberryPi sont bien connues des programmeurs. Leur petit prix e
 <h5>La combinaison des deux</h5>
 Parmis ces utilisations on peut citer la domotique et la robotique. Un des meilleurs examples est le Français Gaël Langevin et son <a href="http://www.inmoov.fr/project/">robot InMoov</a>, fabriqué par impression 3D et contrôlé par un simple Arduino.
 
-<img style="display: block; margin: 0 auto;" src="/wp-content/uploads/2015/07/.inmoov_s.jpg" alt="inmoov.jpg" />
+<img style="margin: 0 auto;" src="/wp-content/uploads/2015/07/.inmoov_s.jpg" alt="inmoov.jpg" />
 
 Nicolas Huchet, amputé d'un bras, a désormais <a href="http://bionico.org/inde-techfest-bombay-2-3-4-janvier-2015/">un bras bionique</a> low-cost fabriqué avec cette technologie:
 
-<img style="display: block; margin: 0 auto;" src="/wp-content/uploads/2015/07/.bionic-hand_s.jpg" alt="bionic-hand.jpg" />
+<img style="margin: 0 auto;" src="/wp-content/uploads/2015/07/.bionic-hand_s.jpg" alt="bionic-hand.jpg" />
 <h4>Les lieux</h4>
 Traditionnellement, les Fab labs sont des lieux communautaires mis à disposition gratuitement (mais forcément avec les contraintes de partage associées). Ils peuvent être d'associations, d'universités, d'entreprises, ..
 
@@ -98,7 +98,7 @@ Les technologies mises en oeuvres sont proches quelque soit le domaine, cette pr
 
 Cette présentation a battu le record du nombre de technologies au mètre carré, je ne peux donc pas tout détailler, mais je vais essayer de reprendre les idées les plus intéressantes.
 <h4>Matériel</h4>
-<img style="float: left; m&lt;br /&gt;argin: 0 1em 1em 0;" title="raspberry" src="/wp-content/uploads/2015/07/rasp-logo.png" alt="raspberry" />
+<img title="raspberry" src="/wp-content/uploads/2015/07/rasp-logo.png" alt="raspberry" />
 
 Le capteur de température/hygrométrie est un Enocean, car cette marque a l'avantage d'être sans fil, sans pile, et d'être bien documentée. Il envoie à intervalle régulier ces informations à un Raspberry Pi local. Chaque maison est donc équipée d'un capteur Enocean et d'un Raspberry. Le raspberry héberge une application Node.js qui transmer les données des capteurs vers les traitements.
 
