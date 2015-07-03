@@ -9,13 +9,11 @@ post_excerpt: |
   <strong>les NightClazz sont de retours en 2015</strong>.</p>
 layout: post
 permalink: >
-  http://blog.zenika-offres.com/20150115nightclazz-docker-decouverte-le-5-fevrier-2015/
+  http://blog.zenika-offres.com/index.php?post/2015/01/15/nightclazz-docker-decouverte-le-5-fevrier-2015/
 published: true
 slide_template:
   - default
 ---
-<img class="alignnone" style="display: block; margin: 0 auto;" title="NCD-Docker" src="/wp-content/uploads/2015/07/Nightclazz_docker_decouverte_new_m.jpg" alt="NCD-Docker" width="702" height="36" />
-
 Après avoir abordé les différentes problématiques autour d'<a href="http://blog.zenika.com/index.php?post/2014/02/21/NightClazz-AngularJS-Avance-le-6-mars-2014">AngularJS</a>, du <a href="http://blog.zenika.com/index.php?post/2014/05/07/NightClazz-Build-Tools-Continuous-Delivery-Avance">Continuous Delivery</a> et de <a href="http://blog.zenika.com/index.php?post/2014/11/13/NightClazz-Java-8-Avance-le-4-decembre-2014">Java 8</a> :
 <strong>les NightClazz sont de retours en 2015</strong>.
 
