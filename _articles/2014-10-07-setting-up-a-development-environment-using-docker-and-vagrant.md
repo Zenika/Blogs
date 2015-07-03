@@ -7,7 +7,8 @@ author: mloriedo
 post_date: 2014-10-07 10:00:00
 post_excerpt: '<p>Often considered two alternative tools, Docker and Vagrant can be used together to build isolated and repeatable development environments. We will prove it setting up a Docker container for development of a Java application and taking advantage of Vagrant powerful features to solve some real life practical issues.</p>'
 layout: post
-permalink: http://blog.zenika-offres.com/?p=184
+permalink: >
+  http://blog.zenika-offres.com/setting-up-a-development-environment-using-docker-and-vagrant/
 published: true
 slide_template:
   - default
@@ -15,8 +16,6 @@ slide_template:
 Often considered two alternative tools, Docker and Vagrant can be used together to build isolated and repeatable development environments. We will prove it setting up a Docker container for development of a Java application and taking advantage of Vagrant powerful features to solve some real life practical issues.
 
 <!--more-->
-
-<img style="display: block; margin: 0 auto;" src="/wp-content/uploads/2015/07/docker_vagrant_small.png" alt="docker+vagrant" />
 <h3>TL;DR</h3>
 The first part of this blog post deals with the common flaws of development environments, the setup of a simple Docker environment and the benefits of a Vagrant+Docker configuration. But if you want to just start using Docker with Vagrant jump to the <a href="#jump">corresponding section</a>.
 <h3>What's wrong with development environments?</h3>
