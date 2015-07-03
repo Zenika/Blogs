@@ -21,8 +21,6 @@ Durant cette <a href="http://www.zenika.com/conference/web_ria/clojure-essence-d
 
 La conférence aura lieu lundi <strong>15 février à 19h</strong> dans les locaux de Zenika (Paris).
 
-<!--more-->
-
 Howard sera sur Paris toute la semaine afin d'animer son célèbre cours "<a href="http://www.zenika.com/formation_tapestry.php?fg=50001">Core Tapestry : Développement d'application Web avec Tapestry</a>"
 <h5><ins>Promotion spéciale</ins> : En vous inscrivant à cette conférence gratuite avant le 18 janvier, vous pourrez gagnez, après tirage au sort, une place gratuite à la formation Tapestry du 15 février.</h5>
 L'inscription à la conférence se fera via le <a href="http://www.zenika.com/conference/web_ria/clojure-essence-de-programmation-par-howard-lewis-ship?fg=50001">site web</a>.
